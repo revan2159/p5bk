@@ -35,10 +35,28 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Guru::index');
-$routes->get('/admin', 'Guru::index', ['filter' => 'role:admin']);
 
-//grub route with filter role admin
+//// $routes->get('/', 'Home::index');    // default route
+////$routes->group('/', ['filter' => 'role:guru,admin'], function($routes){
+////$routes->get('admin', 'admin::index');
+////$routes->get('guru', 'guru::index');
+//
+//});    // default route
+
+$routes->get('/', 'Home::index');    // default route
+
+$routes->group('admin', ['filter' => 'role:admin'], function($routes) {
+    $routes->get('dashboard', 'Admin::index') ;
+});
+
+$routes->group('guru', ['filter' => 'role:guru'], function($routes) {
+    $routes->get('dashboard', 'Guru::index') ;
+});
+
+$routes->group('siswa', ['filter' => 'role:siswa'], function($routes) {
+    //
+});
+
 
 
 

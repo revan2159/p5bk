@@ -137,9 +137,15 @@
                 <a href="#" class="user-dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                     <div class="label">
                         <span></span>
-                        <div>Admin</div>
+                        <div>
+                            <?= user()->username; ?>
+                        </div>
                     </div>
-                    <img class="img-user" src="<?= base_url(); ?>/assets/images/avatar1.png" alt="user" srcset="">
+                    <?php if (user()->avatar == null) : ?>
+                        <img src="https://ui-avatars.com/api/?name=<?= user()->username; ?>&background=random&rounded=true&size=128&bold=true&color=ffffff" class="img-user" alt="user1">
+                    <?php else : ?>
+                        <img class="img-user" src="<?= base_url(); ?>/assets/images/<?= user()->avatar; ?>" alt="user" srcset="">
+                    <?php endif; ?>
                 </a>
                 <ul class="dropdown-menu small">
                     <!-- <li class="menu-header">
