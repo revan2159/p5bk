@@ -45,17 +45,21 @@ $routes->set404Override();
 
 $routes->get('/', 'Home::index');    // default route
 
-$routes->group('admin', ['filter' => 'role:admin'], function($routes) {
-    $routes->get('dashboard', 'Admin::index') ;
-    $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']) ;
+$routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
+    $routes->get('dashboard', 'Admin::index');
+    $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
+    $routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
+    $routes->put('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
 });
 
-$routes->group('guru', ['filter' => 'role:guru'], function($routes) {
-    $routes->get('dashboard', 'Guru::index') ;
-    $routes->get('profil', 'Guru::profil',['as'=> 'guru_profil']);
+$routes->group('guru', ['filter' => 'role:guru'], function ($routes) {
+    $routes->get('dashboard', 'Guru::index');
+    $routes->get('profil', 'Guru::profil', ['as' => 'guru_profil']);
 });
 
-$routes->group('siswa', ['filter' => 'role:siswa'], function($routes) {
+
+
+$routes->group('siswa', ['filter' => 'role:siswa'], function ($routes) {
     //
 });
 

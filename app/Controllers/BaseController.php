@@ -48,5 +48,9 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
 
         // E.g.: $this->session = \Config\Services::session();
+
+        //global data sekolah from database
+        $this->datasekolah = new DataSekolah();
+        $this->identitas = $this->datasekolah->identitas();
     }
 }

@@ -1,0 +1,738 @@
+ERROR - 2022-09-27 04:12:42 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '123456', 'p5bk', 3306, '', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-09-27 04:12:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 04:26:59 --> Undefined variable $data
+in APPPATH\Views\fitur\dashboard.php on line 6.
+ 1 APPPATH\Views\fitur\dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\fitur\\dashboard.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(13): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:13:10 --> Attempt to read property "nama" on string
+in APPPATH\Views\fitur\dashboard.php on line 6.
+ 1 APPPATH\Views\fitur\dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on string', 'APPPATH\\Views\\fitur\\dashboard.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(15): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:13:29 --> Cannot access offset of type string on string
+in APPPATH\Views\fitur\dashboard.php on line 6.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 4 APPPATH\Controllers\Admin.php(15): view('fitur/dashboard', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:18:50 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(11): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:19:05 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(13): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:19:10 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(13): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:19:11 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(13): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:19:31 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(13): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:17 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:18 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:19 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:19 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:19 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:19 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:19 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:20 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:20 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:20 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(18): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:20:26 --> Invalid file: fitur/dasboard.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/dasboard.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dasboard', [], true)
+ 3 APPPATH\Controllers\DataSekolah.php(14): view('fitur/dasboard')
+ 4 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->identitas()
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 05:23:09 --> Attempt to read property "title" on array
+in APPPATH\Views\fitur\dashboard.php on line 3.
+ 1 APPPATH\Views\fitur\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "title" on array', 'APPPATH\\Views\\fitur\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(21): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:43:24 --> Undefined array key "title"
+in APPPATH\Views\fitur\dashboard.php on line 3.
+ 1 APPPATH\Views\fitur\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "title"', 'APPPATH\\Views\\fitur\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(19): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:49:20 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 16.
+ 1 APPPATH\Controllers\Admin.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:49:34 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 16.
+ 1 APPPATH\Controllers\Admin.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:49:35 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 16.
+ 1 APPPATH\Controllers\Admin.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:49:36 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 16.
+ 1 APPPATH\Controllers\Admin.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:52:16 --> Undefined property: App\Controllers\Admin::$sekolah
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sekolah', 'APPPATH\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:52:18 --> Undefined property: App\Controllers\Admin::$sekolah
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$sekolah', 'APPPATH\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:52:38 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:52:39 --> Undefined property: App\Controllers\Admin::$datasekolah
+in APPPATH\Controllers\Admin.php on line 14.
+ 1 APPPATH\Controllers\Admin.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$datasekolah', 'APPPATH\\Controllers\\Admin.php', 14)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:52:57 --> Call to a member function findAll() on null
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:53:36 --> Call to a member function identitas() on null
+in APPPATH\Controllers\Admin.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:57:56 --> Undefined array key "sekolah_nama"
+in APPPATH\Views\fitur\dashboard.php on line 3.
+ 1 APPPATH\Views\fitur\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_nama"', 'APPPATH\\Views\\fitur\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:58:22 --> Attempt to read property "sekolah_nama" on array
+in APPPATH\Views\fitur\dashboard.php on line 3.
+ 1 APPPATH\Views\fitur\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "sekolah_nama" on array', 'APPPATH\\Views\\fitur\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(22): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:59:29 --> Call to a member function identitas() on array
+in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 07:59:40 --> Call to a member function identitas() on array
+in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:01:16 --> Call to a member function rowasArray() on array
+in APPPATH\Controllers\Admin.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:33:30 --> Call to undefined method App\Models\SekolahModel::tahun_ajaran
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\DataSekolah.php(24): CodeIgniter\Model->__call('tahun_ajaran', [])
+ 2 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:36:02 --> Call to undefined method App\Models\TahunAjaranModel::hasMany
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\TahunAjaranModel.php(46): CodeIgniter\Model->__call('hasMany', [...])
+ 2 APPPATH\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+ 3 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:36:04 --> Call to undefined method App\Models\TahunAjaranModel::hasMany
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\TahunAjaranModel.php(46): CodeIgniter\Model->__call('hasMany', [...])
+ 2 APPPATH\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+ 3 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+ 4 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-27 08:40:44 --> mysqli_sql_exception: Unknown column 'tb_semester.semester_nama' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_seme...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_seme...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_seme...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_seme...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\TahunAjaranModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+#6 E:\laragon\www\p5bk\app\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2022-09-27 08:40:44 --> Unknown column 'tb_semester.semester_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_semester`.`semester_id`, `tb_semester`.`semester_nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_semester`.`semester_id`, `tb_semester`.`semester_nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_semester`.`semester_id`, `tb_semester`.`semester_nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_semester`.`semester_id`, `tb_semester`.`semester_nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`', [], false)
+ 5 APPPATH\Models\TahunAjaranModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+ 7 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-27 08:41:41 --> mysqli_sql_exception: Unknown column 'tb_tahun_ajaran.tahun_ajaran_nama' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_seme...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_seme...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_seme...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_seme...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\TahunAjaranModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+#6 E:\laragon\www\p5bk\app\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#12 {main}
+CRITICAL - 2022-09-27 08:41:41 --> Unknown column 'tb_tahun_ajaran.tahun_ajaran_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_semester`.`semester_id`, `tb_semester`.`nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_semester`.`semester_id`, `tb_semester`.`nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_semester`.`semester_id`, `tb_semester`.`nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_semester`.`semester_id`, `tb_semester`.`nama`, `tb_semester`.`tahun_ajaran_id`, `tb_tahun_ajaran`.`tahun_ajaran_nama`
+FROM `tb_semester`
+JOIN `tb_tahun_ajaran` ON `tb_semester`.`tahun_ajaran_id` = `tb_tahun_ajaran`.`tahun_ajaran_id`', [], false)
+ 5 APPPATH\Models\TahunAjaranModel.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\DataSekolah.php(27): App\Models\TahunAjaranModel->semester()
+ 7 APPPATH\Controllers\Admin.php(17): App\Controllers\DataSekolah->tahun_ajaran()
+ 8 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 9 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:41:59 --> Call to undefined method App\Models\SekolahModel::semester
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\DataSekolah.php(33): CodeIgniter\Model->__call('semester', [])
+ 2 APPPATH\Controllers\Admin.php(19): App\Controllers\DataSekolah->semester()
+ 3 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:42:24 --> Call to undefined method App\Controllers\DataSekolah::semester()
+in APPPATH\Controllers\Admin.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 08:53:50 --> Undefined property: App\Controllers\Admin::$session
+in APPPATH\Controllers\Admin.php on line 27.
+ 1 APPPATH\Controllers\Admin.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$session', 'APPPATH\\Controllers\\Admin.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:08:27 --> Invalid file: fitur/data_sekolah.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/data_sekolah.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+ 3 APPPATH\Controllers\Admin.php(44): view('fitur/data_sekolah')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:09:33 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(44): view('fitur/data_sekolah')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:10:42 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:10:44 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:10:45 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah')
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:18:26 --> Undefined variable $route_to
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route_to', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:18:27 --> Undefined variable $route_to
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route_to', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:18:27 --> Undefined variable $route_to
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $route_to', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:19:35 --> Undefined variable $base_url
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:19:36 --> Undefined variable $base_url
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:19:37 --> Undefined variable $base_url
+in APPPATH\Views\layout\sidebar.php on line 6.
+ 1 APPPATH\Views\layout\sidebar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $base_url', 'APPPATH\\Views\\layout\\sidebar.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(49): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+10 APPPATH\Controllers\Admin.php(51): view('fitur/data_sekolah', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:25:57 --> Array to string conversion
+in APPPATH\Controllers\Guru.php on line 11.
+ 1 APPPATH\Controllers\Guru.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Controllers\\Guru.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Guru->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-27 09:26:51 --> Undefined variable $identitas
+in APPPATH\Views\fitur\dashboard.php on line 20.
+ 1 APPPATH\Views\fitur\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $identitas', 'APPPATH\\Views\\fitur\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Guru.php(15): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
