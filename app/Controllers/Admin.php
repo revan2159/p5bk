@@ -9,4 +9,9 @@ class Admin extends BaseController
         return view('admin/index');
     }
 
+    public function profil()
+    {
+        return view('admin/profil');
+    }
+
 }

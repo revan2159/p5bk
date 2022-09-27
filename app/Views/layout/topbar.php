@@ -152,7 +152,7 @@
                                 <a class="dropdown-item" href="#">Notifikasi</a>
                             </li> -->
                     <li class="menu-content ps-menu">
-                        <a href="#">
+                        <a href="<?php if (in_groups('admin')) { echo route_to('admin_profil'); } else {echo route_to('guru_profil');};?>">
                             <div class="description">
                                 <i class="ti-user"></i> Profile
                             </div>

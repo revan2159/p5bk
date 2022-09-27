@@ -9,4 +9,9 @@ class Guru extends BaseController
         return view('guru/index');
     }
 
+    public function profil()
+    {
+        return view('guru/profil');
+    }
+
 }
