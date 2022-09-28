@@ -43,15 +43,21 @@ $routes->set404Override();
 //
 //});    // default route
 
-$routes->get('/', 'Home::index');    // default route
+$routes->get('/', 'Home::index');
+
+
 
 $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
     $routes->get('dashboard', 'Admin::index');
     $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
     $routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
     $routes->get('data-siswa', 'Siswa::index', ['as' => 'data-siswa']);
+    $routes->get('data-p5bk', 'P5bk::capaian', ['as' => 'data-p5bk']);
+    $routes->get('perencanaan', 'P5bk::index', ['as' => 'admin-perencanaan']);
+    $routes->get('capaian/(:num)', 'P5bk::capaian/$1');
     $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
 });
+
 
 //router for update, delete, and insert data
 
@@ -59,6 +65,7 @@ $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
 $routes->group('guru', ['filter' => 'role:guru'], function ($routes) {
     $routes->get('dashboard', 'Guru::index');
     $routes->get('profil', 'Guru::profil', ['as' => 'guru_profil']);
+    $routes->get('perencanaan', 'P5bk::index', ['as' => 'guru-perencanaan']);
 });
 
 

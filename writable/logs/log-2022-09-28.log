@@ -169,3 +169,974 @@ in APPPATH\Views\fitur\data_siswa.php on line 92.
  6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
  8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 16:34:37 --> Invalid file: fitur/perencanaan.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/perencanaan.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 3 APPPATH\Controllers\P5bk.php(17): view('fitur/perencanaan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 16:35:00 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(52): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/pecencanaan', [], true)
+10 APPPATH\Controllers\P5bk.php(17): view('fitur/pecencanaan', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 16:36:06 --> Undefined variable $active
+in APPPATH\Views\layout\sidebar.php on line 2.
+ 1 APPPATH\Views\layout\sidebar.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $active', 'APPPATH\\Views\\layout\\sidebar.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 5 APPPATH\Views\layout\index.php(52): CodeIgniter\View\View->include('layout/sidebar')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+ 9 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+10 APPPATH\Controllers\P5bk.php(17): view('fitur/perencanaan', [...])
+11 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+12 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+13 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 16:42:28 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/perencanaan', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 16:49:37 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(17): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 17:53:58 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(17): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 17:57:57 --> The route for "data-p5bk" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('data-p5bk')
+ 2 APPPATH\Views\layout\sidebar.php(38): url_to('data-p5bk')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\index.php(52): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+11 APPPATH\Controllers\Admin.php(34): view('fitur/dashboard', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 17:57:59 --> The route for "data-p5bk" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('data-p5bk')
+ 2 APPPATH\Views\layout\sidebar.php(38): url_to('data-p5bk')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\index.php(52): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+11 APPPATH\Controllers\Admin.php(34): view('fitur/dashboard', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:00:36 --> Undefined variable $siswa
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 APPPATH\Views\fitur\capaian.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\capaian.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(28): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:06:12 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 23.
+ 1 APPPATH\Controllers\P5bk.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:06:13 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 23.
+ 1 APPPATH\Controllers\P5bk.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:06:14 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 23.
+ 1 APPPATH\Controllers\P5bk.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:06:24 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 23.
+ 1 APPPATH\Controllers\P5bk.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 23)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-28 18:09:22 --> mysqli_sql_exception: Table 'p5bk.element' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-28 18:09:22 --> Table 'p5bk.element' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-28 18:09:23 --> mysqli_sql_exception: Table 'p5bk.element' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-28 18:09:23 --> Table 'p5bk.element' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `element`.`id_element`, `element`.`nama_element`, `sub_element`.`id_sub_element`, `sub_element`.`nama_sub_element`
+FROM `dimensi`
+JOIN `element` ON `dimensi`.`id_dimensi` = `element`.`dimensi_id`
+JOIN `sub_element` ON `element`.`id_element` = `sub_element`.`element_id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:15:51 --> Undefined variable $siswa
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 APPPATH\Views\fitur\capaian.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\capaian.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(36): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:16:24 --> Undefined array key "siswa_nis"
+in APPPATH\Views\fitur\capaian.php on line 43.
+ 1 APPPATH\Views\fitur\capaian.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_nis"', 'APPPATH\\Views\\fitur\\capaian.php', 43)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(36): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:36:18 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 APPPATH\Views\fitur\capaian.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(37): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:36:59 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 APPPATH\Views\fitur\capaian.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:37:09 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:37:44 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 40.
+ 1 APPPATH\Views\fitur\capaian.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:40:26 --> Undefined array key "dimensi_id"
+in APPPATH\Views\fitur\capaian.php on line 6.
+ 1 APPPATH\Views\fitur\capaian.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dimensi_id"', 'APPPATH\\Views\\fitur\\capaian.php', 6)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:44:54 --> Undefined array key "siswa_nis"
+in APPPATH\Views\fitur\capaian.php on line 62.
+ 1 APPPATH\Views\fitur\capaian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_nis"', 'APPPATH\\Views\\fitur\\capaian.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:45:21 --> Undefined array key "siswa_nis"
+in APPPATH\Views\fitur\capaian.php on line 62.
+ 1 APPPATH\Views\fitur\capaian.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_nis"', 'APPPATH\\Views\\fitur\\capaian.php', 62)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:48:21 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 34.
+ 1 APPPATH\Views\fitur\capaian.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 18:49:25 --> CodeIgniter\Database\BaseBuilder::get(): Argument #1 ($limit) must be of type ?int, string given, called in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 31
+in SYSTEMPATH\Database\BaseBuilder.php on line 1577.
+ 1 APPPATH\Controllers\P5bk.php(31): CodeIgniter\Database\BaseBuilder->get('nama_dimensi')
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:12:32 --> Undefined property: App\Controllers\P5bk::$DimensiModel
+in APPPATH\Controllers\P5bk.php on line 32.
+ 1 APPPATH\Controllers\P5bk.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$DimensiModel', 'APPPATH\\Controllers\\P5bk.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:12:34 --> Undefined property: App\Controllers\P5bk::$DimensiModel
+in APPPATH\Controllers\P5bk.php on line 32.
+ 1 APPPATH\Controllers\P5bk.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$DimensiModel', 'APPPATH\\Controllers\\P5bk.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:12:34 --> Undefined property: App\Controllers\P5bk::$DimensiModel
+in APPPATH\Controllers\P5bk.php on line 32.
+ 1 APPPATH\Controllers\P5bk.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$DimensiModel', 'APPPATH\\Controllers\\P5bk.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:12:42 --> Undefined property: App\Controllers\P5bk::$DimensiModel
+in APPPATH\Controllers\P5bk.php on line 32.
+ 1 APPPATH\Controllers\P5bk.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$DimensiModel', 'APPPATH\\Controllers\\P5bk.php', 32)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:13:05 --> Undefined property: App\Controllers\P5bk::$DimensiModel
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 APPPATH\Controllers\P5bk.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$DimensiModel', 'APPPATH\\Controllers\\P5bk.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:14:23 --> Too few arguments to function App\Models\DimensiModel::getElemen(), 0 passed in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 39 and exactly 1 expected
+in APPPATH\Models\DimensiModel.php on line 50.
+ 1 APPPATH\Controllers\P5bk.php(39): App\Models\DimensiModel->getElemen()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:15:39 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 38.
+ 1 APPPATH\Views\fitur\capaian.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 38)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(48): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:17:32 --> Call to undefined method App\Models\DimensiModel::getResultArray
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Models\DimensiModel.php(46): CodeIgniter\Model->__call('getResultArray', [])
+ 2 APPPATH\Controllers\P5bk.php(38): App\Models\DimensiModel->getDimensi()
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:18:34 --> Call to a member function getResultArray() on array
+in APPPATH\Models\DimensiModel.php on line 46.
+ 1 APPPATH\Controllers\P5bk.php(38): App\Models\DimensiModel->getDimensi()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:20:00 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\P5bk.php on line 38.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:20:58 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:20:59 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:22:03 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 APPPATH\Views\fitur\capaian.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:23:11 --> Cannot use [] for reading
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 19:23:20 --> Cannot use [] for reading
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-09-28 19:23:26 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:23:56 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 APPPATH\Views\fitur\capaian.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:23:58 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 APPPATH\Views\fitur\capaian.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:23:58 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 APPPATH\Views\fitur\capaian.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:24:08 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 4.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:24:09 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 4.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:24:50 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 2.
+ 1 APPPATH\Views\fitur\capaian.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:25:17 --> Attempt to read property "nama_dimensi" on array
+in APPPATH\Views\fitur\capaian.php on line 3.
+ 1 APPPATH\Views\fitur\capaian.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_dimensi" on array', 'APPPATH\\Views\\fitur\\capaian.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:25:33 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 3.
+ 1 APPPATH\Views\fitur\capaian.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:25:45 --> Attempt to read property "nama_dimensi" on array
+in APPPATH\Views\fitur\capaian.php on line 3.
+ 1 APPPATH\Views\fitur\capaian.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_dimensi" on array', 'APPPATH\\Views\\fitur\\capaian.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:29:08 --> Undefined variable $dilemsi
+in APPPATH\Views\fitur\capaian.php on line 33.
+ 1 APPPATH\Views\fitur\capaian.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dilemsi', 'APPPATH\\Views\\fitur\\capaian.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(49): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:36:15 --> syntax error, unexpected token ";"
+in APPPATH\Controllers\P5bk.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\P5bk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\P5bk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\P5bk')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\P5bk', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:37:09 --> Undefined array key 6
+in APPPATH\Controllers\P5bk.php on line 48.
+ 1 APPPATH\Controllers\P5bk.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 6', 'APPPATH\\Controllers\\P5bk.php', 48)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:38:45 --> Call to undefined method App\Models\DimensiModel::getDimensi
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\P5bk.php(42): CodeIgniter\Model->__call('getDimensi', [])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:45:39 --> syntax error, unexpected token ";", expecting identifier or variable or "{" or "$"
+in APPPATH\Controllers\P5bk.php on line 42.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\P5bk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\P5bk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\P5bk')
+ 4 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\P5bk', true)
+ 5 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:47:33 --> Class "App\Controllers\DimensiModel" not found
+in APPPATH\Controllers\P5bk.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\P5bk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:47:46 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 42.
+ 1 APPPATH\Controllers\P5bk.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:48:03 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 43.
+ 1 APPPATH\Controllers\P5bk.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:48:04 --> Undefined property: App\Controllers\P5bk::$db
+in APPPATH\Controllers\P5bk.php on line 43.
+ 1 APPPATH\Controllers\P5bk.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\P5bk::$db', 'APPPATH\\Controllers\\P5bk.php', 43)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:51:02 --> Attempt to read property "nama_dimensi" on array
+in APPPATH\Views\fitur\capaian.php on line 33.
+ 1 APPPATH\Views\fitur\capaian.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_dimensi" on array', 'APPPATH\\Views\\fitur\\capaian.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(53): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 19:52:38 --> Attempt to read property "nama_dimensi" on array
+in APPPATH\Views\fitur\capaian.php on line 33.
+ 1 APPPATH\Views\fitur\capaian.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_dimensi" on array', 'APPPATH\\Views\\fitur\\capaian.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(53): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:17:51 --> Too few arguments to function App\Models\DimensiModel::getElemen(), 0 passed in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 45 and exactly 1 expected
+in APPPATH\Models\DimensiModel.php on line 52.
+ 1 APPPATH\Controllers\P5bk.php(45): App\Models\DimensiModel->getElemen()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:18:21 --> Too few arguments to function App\Models\DimensiModel::getElemen(), 0 passed in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 45 and exactly 1 expected
+in APPPATH\Models\DimensiModel.php on line 52.
+ 1 APPPATH\Controllers\P5bk.php(45): App\Models\DimensiModel->getElemen()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:19:43 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:19:44 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:20:00 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:20:10 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:20:11 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:20:16 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:21:13 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:21:14 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::getSegments()
+in APPPATH\Controllers\P5bk.php on line 44.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:22:19 --> Too few arguments to function App\Models\DimensiModel::getElemen(), 0 passed in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 45 and exactly 1 expected
+in APPPATH\Models\DimensiModel.php on line 52.
+ 1 APPPATH\Controllers\P5bk.php(45): App\Models\DimensiModel->getElemen()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:22:20 --> Too few arguments to function App\Models\DimensiModel::getElemen(), 0 passed in E:\laragon\www\p5bk\app\Controllers\P5bk.php on line 45 and exactly 1 expected
+in APPPATH\Models\DimensiModel.php on line 52.
+ 1 APPPATH\Controllers\P5bk.php(45): App\Models\DimensiModel->getElemen()
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:30:58 --> Undefined variable $p5bk
+in APPPATH\Views\fitur\capaian.php on line 45.
+ 1 APPPATH\Views\fitur\capaian.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $p5bk', 'APPPATH\\Views\\fitur\\capaian.php', 45)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(55): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('5')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:31:36 --> Undefined variable $dimensi
+in APPPATH\Views\fitur\capaian.php on line 33.
+ 1 APPPATH\Views\fitur\capaian.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $dimensi', 'APPPATH\\Views\\fitur\\capaian.php', 33)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(67): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->detaildimensi('5')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:33:38 --> Undefined variable $id
+in APPPATH\Controllers\P5bk.php on line 47.
+ 1 APPPATH\Controllers\P5bk.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'APPPATH\\Controllers\\P5bk.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('5')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:38:45 --> Unclosed '{' on line 48
+in APPPATH\Views\fitur\capaian.php on line 106.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 3 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:38:55 --> Attempt to read property "nama_dimensi" on array
+in APPPATH\Views\fitur\capaian.php on line 49.
+ 1 APPPATH\Views\fitur\capaian.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama_dimensi" on array', 'APPPATH\\Views\\fitur\\capaian.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:39:12 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 49.
+ 1 APPPATH\Views\fitur\capaian.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 49)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:43:56 --> Undefined variable $no
+in APPPATH\Views\fitur\capaian.php on line 65.
+ 1 APPPATH\Views\fitur\capaian.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'APPPATH\\Views\\fitur\\capaian.php', 65)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:44:06 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\capaian.php on line 67.
+ 1 APPPATH\Views\fitur\capaian.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\capaian.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:44:19 --> Undefined array key 0
+in APPPATH\Views\fitur\capaian.php on line 67.
+ 1 APPPATH\Views\fitur\capaian.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Views\\fitur\\capaian.php', 67)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:44:29 --> Undefined variable $no
+in APPPATH\Views\fitur\capaian.php on line 66.
+ 1 APPPATH\Views\fitur\capaian.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'APPPATH\\Views\\fitur\\capaian.php', 66)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:46:03 --> Undefined property: stdClass::$nama_dimensi
+in APPPATH\Views\fitur\capaian.php on line 64.
+ 1 APPPATH\Views\fitur\capaian.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nama_dimensi', 'APPPATH\\Views\\fitur\\capaian.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:47:30 --> Cannot use object of type stdClass as array
+in APPPATH\Views\fitur\capaian.php on line 64.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 4 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 20:52:23 --> Undefined variable $no
+in APPPATH\Views\fitur\capaian.php on line 64.
+ 1 APPPATH\Views\fitur\capaian.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no', 'APPPATH\\Views\\fitur\\capaian.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 5 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:04:40 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(24): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:07:39 --> syntax error, unexpected end of file
+in APPPATH\Views\fitur\capaian.php on line 100.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 3 APPPATH\Controllers\P5bk.php(63): view('fitur/capaian', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('1')
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:14:37 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(24): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
