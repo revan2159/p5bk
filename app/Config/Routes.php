@@ -49,8 +49,12 @@ $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
     $routes->get('dashboard', 'Admin::index');
     $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
     $routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
-    $routes->put('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
+    $routes->get('data-siswa', 'Siswa::index', ['as' => 'data-siswa']);
+    $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
 });
+
+//router for update, delete, and insert data
+
 
 $routes->group('guru', ['filter' => 'role:guru'], function ($routes) {
     $routes->get('dashboard', 'Guru::index');

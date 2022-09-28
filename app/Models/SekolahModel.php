@@ -14,7 +14,16 @@ class SekolahModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = [
+        'sekolah_nama',
+        'sekolah_npsn',
+        'sekolah_alamat',
+        'sekolah_kodepos',
+        'sekolah_telepon',
+        'sekolah_email',
+        'sekolah_website',
+        'sekolah_logo',
+    ];
 
     // Dates
     protected $useTimestamps = false;

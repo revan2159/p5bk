@@ -47,8 +47,7 @@ class CreateTbTahunAjar extends Migration
             ],
         ]);
         $this->forge->addKey('tahun_ajaran_id', true);
-        $this->forge->addForeignKey('tahun_ajaran_id', 'tb_semester', 'tahun_ajaran_id', 'CASCADE', 'CASCADE');
-
+       
         $this->forge->createTable('tb_tahun_ajaran');
     }
 

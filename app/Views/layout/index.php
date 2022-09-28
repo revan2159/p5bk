@@ -14,6 +14,9 @@
 
     <!-- CSS for this page only -->
     <link rel="stylesheet" href="<?= base_url(); ?>/vendor/chart.js/dist/Chart.min.css">
+     <!-- CSS for this page only -->
+<link href="<?= base_url(); ?>/vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="<?= base_url(); ?>/vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
     <!-- End CSS  -->
 
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.min.css">
@@ -121,10 +124,20 @@
 <script src="<?= base_url(); ?>/vendor/chart.js/dist/Chart.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="<?= base_url(); ?>/assets/js/page/index.js"></script>
+<!-- js for this page only -->
+<script src="<?= base_url(); ?>/vendor/jquery/dist/jquery.min.js"></script>
+<script src="<?= base_url(); ?>/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="<?= base_url(); ?>/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="<?= base_url(); ?>/assets/js/page/datatables.js"></script>
 <!-- ======= -->
 <script src="<?= base_url(); ?>/assets/js/main.js"></script>
 <script>
     Main.init()
+</script>
+
+    
+<script>
+    DataTable.init()
 </script>
 
 </html>

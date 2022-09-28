@@ -12,7 +12,7 @@
             <span>Dashboard</span>
         </a>
     </li>
-    <li class="<?php if ($active === 'data_sekolah') {
+    <li class="<?php if (!empty($active)) {
                     echo 'active';
                 } else echo '' ?>
     ">
@@ -28,7 +28,9 @@
                 <li><a href="element-button.html" class="link"><span>Data Guru</span></a></li>
                 <li><a href="element-tabs-collapse.html" class="link"><span>Data Akademik</span></a></li>
             <?php endif; ?>
-            <li><a href="element-accordion.html" class="link"><span>Data Siswa</span></a></li>
+            <li class="<?php if ($active === 'data_siswa') {
+                                echo 'active';
+                            } else echo '' ?>"><a href="<?= url_to('data-siswa') ?>" class="link"><span>Data Siswa</span></a></li>
             <li><a href="element-card.html" class="link"><span>Data Kelas</span></a></li>
         </ul>
     </li>

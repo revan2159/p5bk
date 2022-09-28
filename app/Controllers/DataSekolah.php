@@ -29,8 +29,12 @@ class DataSekolah extends BaseController
         $this->session = Services::session();
 
         $data = $this->tahun_ajaran->semester();
-        $this->session->set('tahun_ajaran', $data[0]['nama']);
-        return $data;
+       if ($data !== null) {
+            $this->session->setFlashdata('error', 'Data Tahun Ajaran Kosong');
+        } else {
+            $this->session->set('tahun_ajaran', $data[0]['nama']);
+            return $data;
+        }
     }
 
     public function ubah_sekolah()
@@ -45,8 +49,11 @@ class DataSekolah extends BaseController
             'sekolah_website' => $this->request->getVar('website'),
             'sekolah_logo' => $this->request->getVar('logo'),
         ];
-
-        $this->sekolah->update(1, $data);
-        return redirect()->to('/admin/index');
+        if ($this->sekolah->update(1, $data)=== false){
+            $errors = $this->sekolah->errors();
+           // return redirect()->to('/data-sekolah');
+            return redirect()->to('/admin/data-sekolah');
+        }
+        
     }
 }
