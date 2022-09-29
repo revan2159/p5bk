@@ -1,3 +1,5 @@
+
+
 <?= $this->extend('layout/index'); ?>
 <?= $this->section('h_content'); ?>
 
@@ -12,13 +14,13 @@
                 <h4>Ubah Data</h4>
             </div>
             <div class="card-body">
-            <?php if (! empty($errors)): ?>
-    <div class="alert alert-danger">
-    <?php foreach ($errors as $field => $error): ?>
-        <p><?= $error ?></p>
-    <?php endforeach ?>
-    </div>
-<?php endif ?>
+                <?php if (!empty($errors)) : ?>
+                    <div class="alert alert-danger">
+                        <?php foreach ($errors as $field => $error) : ?>
+                            <p><?= $error ?></p>
+                        <?php endforeach ?>
+                    </div>
+                <?php endif ?>
                 <form action="<?= url_to('ubah-sekolah'); ?>" method="POST">
                     <?= csrf_field() ?>
                     <div class="row">
@@ -50,7 +52,7 @@
                         <div class="col-md-4">
                             <div class="mb-3">
                                 <label for="readOnlyInput" class="form-label">Kode Pos</label>
-                                <input type="number" name="kode_pos" value="Kode pos Area" class="form-control"  id="readOnlyInput">
+                                <input type="number" name="kode_pos" value="Kode pos Area" class="form-control" id="readOnlyInput">
                             </div>
                         </div>
                         <div class="col-md-4">

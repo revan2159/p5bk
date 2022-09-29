@@ -1140,3 +1140,15 @@ in APPPATH\Views\fitur\perencanaan.php on line 40.
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-28 22:29:57 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(24): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

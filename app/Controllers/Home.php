@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function index(): string|\CodeIgniter\HTTP\RedirectResponse
+    public function index()
     {
         if (in_groups('guru')) {
             return redirect()->to('/guru/dashboard');
@@ -14,5 +14,4 @@ class Home extends BaseController
             return view('auth/login');
         }
     }
-
 }

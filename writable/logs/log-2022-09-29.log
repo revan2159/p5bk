@@ -1,0 +1,824 @@
+CRITICAL - 2022-09-29 18:05:35 --> Undefined variable $siswa
+in APPPATH\Views\fitur\perencanaan.php on line 40.
+ 1 APPPATH\Views\fitur\perencanaan.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\perencanaan.php', 40)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(24): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 19:25:43 --> syntax error, unexpected '|', expecting ';' or '{'
+in APPPATH\Controllers\Home.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 19:25:57 --> syntax error, unexpected '|', expecting ';' or '{'
+in APPPATH\Controllers\Home.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Home')
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\Home', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 19:32:27 --> syntax error, unexpected '{'
+in APPPATH\Controllers\P5bk.php on line 53.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\P5bk.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\P5bk')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\P5bk')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\P5bk')
+ 5 SYSTEMPATH\CodeIgniter.php(857): class_exists('\\App\\Controllers\\P5bk', true)
+ 6 SYSTEMPATH\CodeIgniter.php(444): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 19:35:32 --> Undefined variable: db
+in APPPATH\Controllers\P5bk.php on line 32.
+ 1 APPPATH\Controllers\P5bk.php(32): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: db', 'APPPATH\\Controllers\\P5bk.php', 32, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 19:39:45 --> mysqli_sql_exception: Unknown column 'rencana_budaya_kerja.id' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 19:39:45 --> Unknown column 'rencana_budaya_kerja.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_rencana`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_rencana`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_rencana`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_rencana`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 19:41:37 --> mysqli_sql_exception: Table 'p5bk.kelas' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 19:41:37 --> Table 'p5bk.kelas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `kelas` ON `rencana_budaya_kerja`.`kelas_id` = `kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `kelas` ON `rencana_budaya_kerja`.`kelas_id` = `kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `kelas` ON `rencana_budaya_kerja`.`kelas_id` = `kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `kelas` ON `rencana_budaya_kerja`.`kelas_id` = `kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = :rencana_budaya_kerja.kelas_id:', [...], false)
+ 5 APPPATH\Controllers\P5bk.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 19:41:56 --> mysqli_sql_exception: Unknown column 'tb_kelas.id_kelas' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 19:41:56 --> Unknown column 'tb_kelas.id_kelas' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `rencana_budaya_kerja`.`kelas_id` = `tb_kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `rencana_budaya_kerja`.`kelas_id` = `tb_kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `rencana_budaya_kerja`.`kelas_id` = `tb_kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`rencana_id`, `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`kelas_id`, `rencana_budaya_kerja`.`deskripsi`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `rencana_budaya_kerja`.`kelas_id` = `tb_kelas`.`id_kelas`
+WHERE `rencana_budaya_kerja`.`kelas_id` = :rencana_budaya_kerja.kelas_id:', [...], false)
+ 5 APPPATH\Controllers\P5bk.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 19:48:27 --> mysqli_sql_exception: Unknown column 'rencana_budaya_kerja.id' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 19:48:27 --> Unknown column 'rencana_budaya_kerja.id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_proyek`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`
+WHERE `rencana_budaya_kerja`.`status` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_proyek`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`
+WHERE `rencana_budaya_kerja`.`status` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_proyek`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`
+WHERE `rencana_budaya_kerja`.`status` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`id`, `rencana_budaya_kerja`.`nama_proyek`, `rencana_budaya_kerja`.`tahun`, `rencana_budaya_kerja`.`keterangan`, `rencana_budaya_kerja`.`status`, `dimensi`.`nama_dimensi`
+FROM `rencana_budaya_kerja`
+JOIN `dimensi` ON `rencana_budaya_kerja`.`dimensi_id` = `dimensi`.`id_dimensi`
+WHERE `rencana_budaya_kerja`.`status` = :rencana_budaya_kerja.status:', [...], false)
+ 5 APPPATH\Controllers\P5bk.php(28): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:05:29 --> Call to a member function getResult() on array
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:19:44 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::count()
+in APPPATH\Controllers\P5bk.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:26:01 --> mysqli_sql_exception: Unknown column 'rencana_budaya_kerja.id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:26:01 --> Unknown column 'rencana_budaya_kerja.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:27:00 --> mysqli_sql_exception: Unknown column 'aspek_penilaian.dimensi_id' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:27:00 --> Unknown column 'aspek_penilaian.dimensi_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:28:26 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::num_rows()
+in APPPATH\Controllers\P5bk.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:31:53 --> mysqli_sql_exception: Unknown column 'rencana_budaya_kerja.id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `aspek_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aspek_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aspek_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `aspek_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(30): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:31:53 --> Unknown column 'rencana_budaya_kerja.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`id` = `aspek_penilaian`.`rencana_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`id` = `aspek_penilaian`.`rencana_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`id` = `aspek_penilaian`.`rencana_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`id` = `aspek_penilaian`.`rencana_id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(30): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:32:46 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::num_rows()
+in APPPATH\Controllers\P5bk.php on line 29.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:33:23 --> Call to a member function num_rows() on array
+in APPPATH\Controllers\P5bk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:33:45 --> Call to a member function num_rows() on array
+in APPPATH\Controllers\P5bk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:35:35 --> mysqli_sql_exception: Unknown column 'aspek_penilaian.rencana_budaya_kerja_id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:35:35 --> Unknown column 'aspek_penilaian.rencana_budaya_kerja_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`id`
+GROUP BY `rencana_budaya_kerja`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`id`
+GROUP BY `rencana_budaya_kerja`.`id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:36:00 --> mysqli_sql_exception: Unknown column 'aspek_penilaian.rencana_budaya_kerja_id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:36:00 --> Unknown column 'aspek_penilaian.rencana_budaya_kerja_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_budaya_kerja_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 20:36:19 --> mysqli_sql_exception: Unknown column 'rencana_budaya_kerja.id' in 'group statement' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 20:36:19 --> Unknown column 'rencana_budaya_kerja.id' in 'group statement'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `rencana_budaya_kerja`.`nama`, `rencana_budaya_kerja`.`deskripsi`, `tb_kelas`.`kelas_nama`, COUNT(aspek_penilaian.dimensi_id) as dimensi
+FROM `rencana_budaya_kerja`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `rencana_budaya_kerja`.`kelas_id`
+JOIN `aspek_penilaian` ON `aspek_penilaian`.`rencana_id` = `rencana_budaya_kerja`.`rencana_id`
+GROUP BY `rencana_budaya_kerja`.`id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:39:46 --> syntax error, unexpected 'foreach' (T_FOREACH)
+in APPPATH\Views\fitur\perencanaan.php on line 38.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 3 APPPATH\Controllers\P5bk.php(38): view('fitur/perencanaan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:40:00 --> Array to string conversion
+in APPPATH\Views\fitur\perencanaan.php on line 41.
+ 1 APPPATH\Views\fitur\perencanaan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\fitur\\perencanaan.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(38): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:40:13 --> Array to string conversion
+in APPPATH\Views\fitur\perencanaan.php on line 41.
+ 1 APPPATH\Views\fitur\perencanaan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\fitur\\perencanaan.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(38): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 20:42:04 --> Trying to get property 'kelas_nama' of non-object
+in APPPATH\Views\fitur\perencanaan.php on line 41.
+ 1 APPPATH\Views\fitur\perencanaan.php(41): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas_nama\' of non-object', 'APPPATH\\Views\\fitur\\perencanaan.php', 41, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(38): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 21:38:49 --> Undefined variable: kelas
+in APPPATH\Views\fitur\perencanaan.php on line 72.
+ 1 APPPATH\Views\fitur\perencanaan.php(72): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: kelas', 'APPPATH\\Views\\fitur\\perencanaan.php', 72, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(37): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 21:40:28 --> Undefined index: id
+in APPPATH\Views\fitur\perencanaan.php on line 73.
+ 1 APPPATH\Views\fitur\perencanaan.php(73): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\fitur\\perencanaan.php', 73, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(38): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 21:57:39 --> Undefined variable: ra
+in APPPATH\Views\fitur\perencanaan.php on line 74.
+ 1 APPPATH\Views\fitur\perencanaan.php(74): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: ra', 'APPPATH\\Views\\fitur\\perencanaan.php', 74, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(39): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:03:58 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::resultArray()
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:04:15 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::resultArray()
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:04:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::resultArray()
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:04:16 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::resultArray()
+in APPPATH\Controllers\P5bk.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:05:08 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\P5bk.php on line 34.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:05:45 --> Trying to get property 'kelas_nama' of non-object
+in APPPATH\Controllers\P5bk.php on line 34.
+ 1 APPPATH\Controllers\P5bk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas_nama\' of non-object', 'APPPATH\\Controllers\\P5bk.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:05:55 --> Trying to get property 'kelas_nama' of non-object
+in APPPATH\Controllers\P5bk.php on line 34.
+ 1 APPPATH\Controllers\P5bk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas_nama\' of non-object', 'APPPATH\\Controllers\\P5bk.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:05:56 --> Trying to get property 'kelas_nama' of non-object
+in APPPATH\Controllers\P5bk.php on line 34.
+ 1 APPPATH\Controllers\P5bk.php(34): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get property \'kelas_nama\' of non-object', 'APPPATH\\Controllers\\P5bk.php', 34, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:08:52 --> Class 'App\Controllers\KelasModel' not found
+in APPPATH\Controllers\P5bk.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(869): App\Controllers\P5bk->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(448): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:11:43 --> Call to a member function getResultArray() on array
+in APPPATH\Controllers\P5bk.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:48:38 --> Undefined index: id
+in APPPATH\Views\fitur\perencanaan.php on line 98.
+ 1 APPPATH\Views\fitur\perencanaan.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\fitur\\perencanaan.php', 98, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(42): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:57:56 --> Undefined index: id
+in APPPATH\Views\fitur\perencanaan.php on line 83.
+ 1 APPPATH\Views\fitur\perencanaan.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\fitur\\perencanaan.php', 83, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(42): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 22:58:00 --> Undefined index: id
+in APPPATH\Views\fitur\perencanaan.php on line 83.
+ 1 APPPATH\Views\fitur\perencanaan.php(83): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'APPPATH\\Views\\fitur\\perencanaan.php', 83, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 5 APPPATH\Controllers\P5bk.php(42): view('fitur/perencanaan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 23:06:30 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`p5bk`.`rencana_budaya_kerja`, CONSTRAINT `get_kelas` FOREIGN KEY (`kelas_id`) REFERENCES `tb_kelas` (`kelas_id`)) in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `re...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `re...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `re...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `re...', NULL, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(64): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->tambah_rencana()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 23:06:30 --> Cannot add or update a child row: a foreign key constraint fails (`p5bk`.`rencana_budaya_kerja`, CONSTRAINT `get_kelas` FOREIGN KEY (`kelas_id`) REFERENCES `tb_kelas` (`kelas_id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `rencana_budaya_kerja` (`deskripsi`, `kelas_id`, `nama`) VALUES (\'asada\',\'1\',\'P6\'), (\'adasdasda\',\'Pilih Kelas\',\'P2\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `rencana_budaya_kerja` (`deskripsi`, `kelas_id`, `nama`) VALUES (\'asada\',\'1\',\'P6\'), (\'adasdasda\',\'Pilih Kelas\',\'P2\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `rencana_budaya_kerja` (`deskripsi`, `kelas_id`, `nama`) VALUES (\'asada\',\'1\',\'P6\'), (\'adasdasda\',\'Pilih Kelas\',\'P2\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1778): CodeIgniter\Database\BaseConnection->query('INSERT INTO `rencana_budaya_kerja` (`deskripsi`, `kelas_id`, `nama`) VALUES (\'asada\',\'1\',\'P6\'), (\'adasdasda\',\'Pilih Kelas\',\'P2\')', null, false)
+ 5 APPPATH\Controllers\P5bk.php(64): CodeIgniter\Database\BaseBuilder->insertBatch([...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->tambah_rencana()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-09-29 23:21:22 --> mysqli_sql_exception: Unknown column 'dimensi.dimensi_id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `aspek_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aspek_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aspek_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `aspek_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\P5bk.php(38): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\P5bk->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-09-29 23:21:22 --> Unknown column 'dimensi.dimensi_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `aspek_penilaian`.`aspek_id`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `aspek_penilaian`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `aspek_penilaian`.`rencana_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `aspek_penilaian`.`aspek_id`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `aspek_penilaian`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `aspek_penilaian`.`rencana_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `aspek_penilaian`.`aspek_id`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `aspek_penilaian`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `aspek_penilaian`.`rencana_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `aspek_penilaian`.`aspek_id`, `aspek_penilaian`.`dimensi_id`, `aspek_penilaian`.`rencana_id`
+FROM `aspek_penilaian`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `aspek_penilaian`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `aspek_penilaian`.`rencana_id`', [], false)
+ 5 APPPATH\Controllers\P5bk.php(38): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:27:06 --> Invalid file: fitur/set-aspek.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('fitur/set-aspek.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set-aspek', [], true)
+ 3 APPPATH\Controllers\Aspek.php(11): view('fitur/set-aspek')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:29:31 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(11): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:04 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(11): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:22 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:23 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:23 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:23 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:23 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-09-29 23:30:24 --> Undefined variable: title
+in APPPATH\Views\fitur\set_aspek.php on line 6.
+ 1 APPPATH\Views\fitur\set_aspek.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\fitur\\set_aspek.php', 6, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\set_aspek.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/set_aspek', [], true)
+ 5 APPPATH\Controllers\Aspek.php(15): view('fitur/set_aspek')
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Aspek->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Aspek))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

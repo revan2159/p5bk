@@ -55,6 +55,9 @@ $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
     $routes->get('data-p5bk', 'P5bk::capaian', ['as' => 'data-p5bk']);
     $routes->get('perencanaan', 'P5bk::index', ['as' => 'admin-perencanaan']);
     $routes->get('capaian/(:num)', 'P5bk::capaian/$1');
+    $routes->get('aspek', 'Aspek::index', ['as' => 'set-aspek']);
+    $routes->post('tambah-rencana', 'P5bk::tambah_rencana', ['as' => 'tambah-rencana']);
+
     $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
 });
 

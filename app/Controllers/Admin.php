@@ -50,4 +50,8 @@ class Admin extends BaseController
         ];
         return view('fitur/data_sekolah', $data);
     }
+    function form()
+    {
+        return view('fitur/user');
+    }
 }

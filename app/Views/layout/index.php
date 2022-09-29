@@ -14,9 +14,9 @@
 
     <!-- CSS for this page only -->
     <link rel="stylesheet" href="<?= base_url(); ?>/vendor/chart.js/dist/Chart.min.css">
-     <!-- CSS for this page only -->
-<link href="<?= base_url(); ?>/vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="<?= base_url(); ?>/vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <!-- CSS for this page only -->
+    <link href="<?= base_url(); ?>/vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="<?= base_url(); ?>/vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
     <!-- End CSS  -->
 
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.min.css">
@@ -135,7 +135,7 @@
     Main.init()
 </script>
 
-    
+
 <script>
     DataTable.init()
 </script>
