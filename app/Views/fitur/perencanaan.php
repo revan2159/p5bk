@@ -16,7 +16,7 @@
                     <div class="col-md-6">
                         <div class="float-end">
                             <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
-                            <a href="<?= url_to('set-aspek'); ?>" class="btn mb-2 btn-primary btn-sm" type="button"><i class="fas fa-plus"></i> Set Aspek</a>
+                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#setAspek" type="button"><i class="fas fa-plus"></i> Set Aspek Penilaian</button>
                         </div>
                     </div>
                 </div>
@@ -45,7 +45,9 @@
                                     <td><?= $row['dimensi'] ?></td>
                                     <td><a href="phpp"></a></td>
                                 </tr>
-                            <?php endforeach; ?>
+                            <?php endforeach;
+
+                            ?>
 
                         </tbody>
                     </table>
@@ -135,20 +137,45 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-12">
-
-                        </div>
+                    <div class="row mb-3">
+                        <form action="<?= url_to('simpan-aspek'); ?>" method="post">
+                            <div class="col-md-12">
+                                <h4 class="text-center">Pilih Judul Project</h4>
+                                <div class="d-flex justify-content-center">
+                                    <select class="form-select" aria-label="Default select example" name="project_id[]" style="width: 300px;">
+                                        <option selected>Pilih Project</option>
+                                        <?php
+                                        foreach ($project as $p) : ?>
+                                            <option value="<?= $p['rencana_id']; ?>"><?= $p['nama']; ?></option>
+                                        <?php endforeach;
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12 pt-2">
+                                <h4 class="text-center">Pilih Aspek Penilaian</h4>
+                                <p class="text-center">boleh pilih lebih dari satu</p>
+                                <?php
+                                $i = 1;
+                                foreach ($dimensi as $d) : ?>
+                                    <input class="btn-check" type="checkbox" name="dimensi_id[]" value="<?= $d->id_dimensi; ?>" id="<?= $d->id_dimensi; ?>" autocomplete="off">
+                                    <label class="btn btn-sm btn-outline-primary m-1 " for="<?= $d->id_dimensi; ?>">
+                                        <?= $d->nama_dimensi; ?>
+                                    </label>
+                                <?php endforeach;
+                                ?>
+                            </div>
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
-
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 
-    <?= $this->endSection(); ?>
+<?= $this->endSection(); ?>

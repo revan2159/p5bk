@@ -21,22 +21,30 @@ class P5bk extends BaseController
 
         $db  = $this->db;
         $builder = $db->table('rencana_budaya_kerja');
+        $builder->join('tb_kelas', 'tb_kelas.kelas_id = rencana_budaya_kerja.kelas_id');
+        $builder->join('aspek_penilaian', 'aspek_penilaian.rencana_id = rencana_budaya_kerja.rencana_id');
         $builder->select('rencana_budaya_kerja.rencana_id,rencana_budaya_kerja.nama, rencana_budaya_kerja.deskripsi,');
         $builder->select('tb_kelas.kelas_id,tb_kelas.kelas_nama');
-        $builder->join('tb_kelas', 'tb_kelas.kelas_id = rencana_budaya_kerja.kelas_id');
         $builder->select('COUNT(aspek_penilaian.dimensi_id) as dimensi');
-        $builder->join('aspek_penilaian', 'aspek_penilaian.rencana_id = rencana_budaya_kerja.rencana_id');
         $builder = $builder->groupBy('rencana_budaya_kerja.rencana_id');
         $query = $builder->get()->getResultarray();
 
         $get_kelas = $this->KelasModel->findAll();
 
 
+
+        $project = $db->table('rencana_budaya_kerja');
+        $project = $project->get()->getResultArray();
+
+        $dimensi = $this->DimensiModel->getDimensi();
+
         $data = [
             'title' => 'Data Peroyek',
             'active' => 'perencanaan',
             'proyek' => $query,
             'kelas' => $get_kelas,
+            'project' => $project,
+            'dimensi' => $dimensi,
 
         ];
         return view('fitur/perencanaan', $data);
@@ -91,5 +99,48 @@ class P5bk extends BaseController
             'dimensi' => $dimensi,
         ];
         return view('fitur/capaian', $data);
+    }
+
+    public function simpan_aspek()
+    {
+        $db  = $this->db;
+        $project_id = $this->request->getVar('project_id');
+        $dimensi_id = $this->request->getVar('dimensi_id');
+
+        $index = 0;
+        $data = array();
+
+
+        // if (is_array($dimensi_id) || is_object($dimensi_id)) {
+        //     if (is_array($project_id) || is_object($project_id)) {
+        //         //loop 1 dimensi
+        //         foreach ($dimensi_id as $dim) {
+        //             //loop 2 project
+        //             foreach ($project_id as $pro) {
+        //                 $data[$index]['project_id'] = $pro;
+        //                 $data[$index]['dimensi_id'] = $dim;
+        //                 $index++;
+        //             }
+        //         }
+        //     }
+        // }
+
+        for ($i = 0; $i < count($project_id); $i++) {
+            for ($j = 0; $j < count($dimensi_id); $j++) {
+                $data[$index]['rencana_id'] = $project_id[$i];
+                $data[$index]['dimensi_id'] = $dimensi_id[$j];
+                $index++;
+            }
+        }
+
+        // //insert data
+        $builder = $db->table('aspek_penilaian');
+        $builder->insertBatch($data);
+        if ($builder) {
+            //auto redirect
+            echo "<script>alert('Data berhasil ditambahkan');window.location.href='perencanaan';</script>";
+        } else {
+            echo "<script>alert('Data gagal ditambahkan');window.location.href='perencanaan';</script>";
+        }
     }
 }

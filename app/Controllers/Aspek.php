@@ -9,14 +9,9 @@ class Aspek extends BaseController
     public function index()
     {
 
-        
-
-
-
-
         $data = [
             'title' => 'Aspek Penilaian',
-            'active' => 'aspek',
+            'active' => 'capaian',
         ];
         return view('fitur/set_aspek', $data);
     }
