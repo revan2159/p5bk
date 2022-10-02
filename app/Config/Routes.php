@@ -47,7 +47,7 @@ $routes->get('/', 'Home::index');
 $routes->get('/test', 'Test::index');
 $routes->get('/test/(:num)', 'Test::index/$1');
 $routes->get('/test/(:num)/(:num)', 'Test::index/$1');
-$routes->post('/test/input-nilai/', 'Test::input_nilai', ['as' => 'input-nilai']);
+
 
 
 $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
@@ -59,6 +59,8 @@ $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
     $routes->get('perencanaan', 'P5bk::index', ['as' => 'admin-perencanaan']);
     $routes->get('capaian/(:num)', 'P5bk::capaian/$1');
     $routes->get('aspek', 'Aspek::index', ['as' => 'set-aspek']);
+    $routes->get('penilaian', 'Penilaian::index', ['as' => 'penilaian']);
+    $routes->post('save', 'Penilaian::save', ['as' => 'input-nilai']);
     $routes->post('tambah-rencana', 'P5bk::tambah_rencana', ['as' => 'tambah-rencana']);
     $routes->post('tambah-aspek', 'P5bk::simpan_aspek', ['as' => 'simpan-aspek']);
     $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);

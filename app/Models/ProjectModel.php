@@ -4,24 +4,29 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AspekModel extends Model
+class ProjectModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'aspek_penilaian';
-    protected $primaryKey       = 'aspek_id';
+    protected $table            = 'rencana_budaya_kerja';
+    protected $primaryKey       = 'rencana_id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $allowedFields    = [
+        'nama',
+        'kelas_id',
+        'deskripsi',
+    ];
+
 
     // Dates
-    // protected $useTimestamps = false;
-    // protected $dateFormat    = 'datetime';
-    // protected $createdField  = 'created_at';
-    // protected $updatedField  = 'updated_at';
-    // protected $deletedField  = 'deleted_at';
+    protected $useTimestamps = false;
+    protected $dateFormat    = 'datetime';
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];
@@ -40,7 +45,7 @@ class AspekModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getAllaspek()
+    public function getAllproject()
     {
         return $this->findAll();
     }

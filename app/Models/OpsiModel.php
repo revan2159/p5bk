@@ -4,11 +4,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class AspekModel extends Model
+class OpsiModel extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'aspek_penilaian';
-    protected $primaryKey       = 'aspek_id';
+    protected $table            = 'opsi_penilaian';
+    protected $primaryKey       = 'opsi_id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;
     protected $returnType       = 'array';
@@ -17,11 +17,11 @@ class AspekModel extends Model
     protected $allowedFields    = [];
 
     // Dates
-    // protected $useTimestamps = false;
-    // protected $dateFormat    = 'datetime';
-    // protected $createdField  = 'created_at';
-    // protected $updatedField  = 'updated_at';
-    // protected $deletedField  = 'deleted_at';
+    protected $useTimestamps = false;
+    protected $dateFormat    = 'datetime';
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
+    protected $deletedField  = 'deleted_at';
 
     // Validation
     protected $validationRules      = [];
@@ -40,7 +40,7 @@ class AspekModel extends Model
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
 
-    public function getAllaspek()
+    public function getAllopsi()
     {
         return $this->findAll();
     }

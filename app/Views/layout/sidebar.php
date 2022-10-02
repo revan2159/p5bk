@@ -54,7 +54,7 @@
                                                     } else {
                                                         echo url_to('guru-perencanaan');
                                                     } ?>" class="link"><span>Perencanaan</span></a></li>
-            <li><a href="error-403.html" class="link"><span>Input Nilai</span></a></li>
+            <li><a href="<?= url_to('penilaian'); ?>" class="link"><span>Input Nilai</span></a></li>
             <li><a href="error-500.html" class="link"><span>Error 500</span></a></li>
         </ul>
     </li>

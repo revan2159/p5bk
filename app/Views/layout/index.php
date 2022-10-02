@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.min.css">
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/bootstrap-override.min.css">
     <link rel="stylesheet" id="theme-color" href="<?= base_url(); ?>/assets/css/dark.min.css">
+    <script src="<?= base_url(); ?>/vendor/jquery/dist/jquery.min.js"></script>
 </head>
 
 <body>
@@ -125,7 +126,7 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="<?= base_url(); ?>/assets/js/page/index.js"></script>
 <!-- js for this page only -->
-<script src="<?= base_url(); ?>/vendor/jquery/dist/jquery.min.js"></script>
+
 <script src="<?= base_url(); ?>/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url(); ?>/assets/js/page/datatables.js"></script>

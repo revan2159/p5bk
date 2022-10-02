@@ -45,4 +45,14 @@ class KelasModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getAllkelas()
+    {
+        return $this->findAll();
+    }
+
+    public function getKelas($id)
+    {
+        return $this->where(['kelas_id' => $id])->first();
+    }
 }
