@@ -119,18 +119,18 @@ class Penilaian extends BaseController
             //jika opsi_id = 0 maka hapus elemen_id siswa_id dan opsi_id
             array_map(function ($item) {
                 if ($item['opsi_id'] == 0) {
-                    unset($item['elemen_id']);
                     unset($item['siswa_id']);
-                    unset($item['opsi_id']);
                     unset($item['aspek_id']);
                     unset($item['rencana_id']);
                     unset($item['dimensi_id']);
+                    unset($item['elemen_id']);
+                    unset($item['opsi_id']);
                 }
                 return $item;
             }, $data)
         );
-        dd($filter);
-        // $this->penilaian->insertBatch($filter);
+
+        $this->penilaian->insertBatch($filter);
         session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
         return redirect()->to('/penilaian');
     }

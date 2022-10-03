@@ -5,8 +5,6 @@
     <div class="title">
         <?= $title ?>
     </div>
-
-
     <div class="content-wrapper">
         <div class="card">
             <div class="card-header">
@@ -27,10 +25,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="float-end">
-                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
-                            <!--<a href="<?= base_url('fitur/siswa/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</a>-->
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -41,9 +36,7 @@
                     </div>
                     <?php
                     //if emty $p5bk
-
                     if (!empty($p5bk)) : ?>
-
                         <table id="example2" class="table display">
                             <thead>
                                 <tr>
@@ -53,7 +46,6 @@
                                     <th>Capaian Fase E</th>
                                 </tr>
                             </thead>
-
                             <tbody>
                                 <?php
                                 $no = 1;
@@ -65,41 +57,19 @@
                                         <td><?= $p->capaian; ?></td>
                                     </tr>
                                 <?php endforeach ?>
-
-
                             </tbody>
                         </table>
 
                     <?php else :
-                        echo '<div class="alert alert-danger" role="alert">'
-                            . 'Silahkan Pilih Dimensi Terlebih Dahulu'
-                            . '</div>';
-
+                        echo '<div class="alert alert-warning" role="alert">
+                                    <h4 class="alert-heading">Stop!</h4>
+                                    <p>Aww yeah, Silahkan Pilih Dimensi.</p>
+                                </div>';
                     endif
-
                     ?>
-
-                </div>
-            </div>
-
-        </div>
-        <div class="modal fade" id="verticalCenter" tabindex="-1" aria-labelledby="verticalCenterLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="verticalCenterLabel">Tambah Data</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-                        consequatur
-                        sint libero esse assumenda provident placeat sed porro ad iusto.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
                 </div>
             </div>
         </div>
-        <?= $this->endSection(); ?>
+    </div>
+</div>
+<?= $this->endSection(); ?>

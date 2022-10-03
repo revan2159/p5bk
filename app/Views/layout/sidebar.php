@@ -55,7 +55,6 @@
                                                         echo url_to('guru-perencanaan');
                                                     } ?>" class="link"><span>Perencanaan</span></a></li>
             <li><a href="<?= url_to('penilaian'); ?>" class="link"><span>Input Nilai</span></a></li>
-            <li><a href="error-500.html" class="link"><span>Error 500</span></a></li>
         </ul>
     </li>
     <li>
@@ -65,13 +64,7 @@
         </a>
         <ul class="sub-menu ">
             <li><a href="form-element.html" class="link">
-                    <span>Form Element</span></a>
-            </li>
-            <li><a href="form-datepicker.html" class="link">
-                    <span>Datepicker</span></a>
-            </li>
-            <li><a href="form-select2.html" class="link">
-                    <span>Select2</span></a>
+                    <span>Cetak Rapor</span></a>
             </li>
         </ul>
     </li>

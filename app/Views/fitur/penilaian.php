@@ -19,13 +19,13 @@
                                         <div class="mb-3">
                                             <label for="pilihkelas" class="form-label">Kelas</label>
                                             <select name="kelas" class="form-select" id="pilihkelas">
-                                                <option disabled><?php
-                                                                    if ($projek == null) {
-                                                                        echo "Pilih Kelas";
-                                                                    } else {
-                                                                        echo $projek[0]['kelas_nama'];
-                                                                    }
-                                                                    ?>
+                                                <option disabled selected><?php
+                                                                            if ($projek == null) {
+                                                                                echo "Pilih Kelas";
+                                                                            } else {
+                                                                                echo $projek[0]['kelas_nama'];
+                                                                            }
+                                                                            ?>
                                                 </option>
                                                 <?php foreach ($kelas as $k) : ?>
                                                     <option value="<?= $k['kelas_id'] ?>"><?= $k['kelas_nama'] ?></option>
@@ -134,19 +134,13 @@
                                     </td>";
                                                     endforeach ?>
 
-
                                     </tr>
-
-                                <?php
-                                            endforeach
-                                ?>
-
+                                <?php endforeach ?>
 
                                         </tbody>
                                     </table>
                                     <input type="hidden" name="count" value="<?= $count_elemen ?>">
                                     <input type="hidden" name="count_siswa" value="<?= $count_siswa ?>">
-
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>
                             <?php else :  ?>
@@ -157,26 +151,15 @@
                                     <p class="mb-0">Jika anda yakin data aspek penilaian sudah benar, silahkan hubungi admin.</p>
                                 </div>
                             <?php endif; ?>
-
-
                         <?php endif; ?>
-
-
-
-
-
                     </div>
                 </div>
             </div>
-
-
         </div>
     </div>
-
     <script>
         $(document).ready(function() {
             //oncklick
-
             $('#pilihkelas').change(function() {
                 $('#formkelas').submit();
             });

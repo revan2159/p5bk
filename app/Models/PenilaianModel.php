@@ -21,7 +21,9 @@ class PenilaianModel extends Model
         'rencana_id',
         'aspek_id',
         'elemen_id',
+        'dimensi_id',
         'opsi_id',
+
     ];
 
     // Dates

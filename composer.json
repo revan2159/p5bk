@@ -13,7 +13,8 @@
         "kint-php/kint": "^4.2",
         "laminas/laminas-escaper": "^2.9",
         "psr/log": "^1.1",
-        "myth/auth": "^1.2"
+        "myth/auth": "^1.2",
+        "mpdf/mpdf": "^8.1"
     },
     "require-dev": {
         "codeigniter/coding-standard": "^1.1",

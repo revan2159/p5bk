@@ -1565,3 +1565,780 @@ in APPPATH\Views\fitur\penilaian.php on line 26.
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 15:31:43 --> mysqli_sql_exception: Table 'p5bk.siswa' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM s...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 E:\laragon\www\p5bk\app\Controllers\Rapor.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2022-10-02 15:31:43 --> Table 'p5bk.siswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM siswa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM siswa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM siswa')
+ 4 APPPATH\Controllers\Rapor.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM siswa')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 15:32:08 --> mysqli_sql_exception: Table 'p5bk.siswa' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM s...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM s...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM s...')
+#3 E:\laragon\www\p5bk\app\Controllers\Rapor.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM s...')
+#4 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#9 {main}
+CRITICAL - 2022-10-02 15:32:08 --> Table 'p5bk.siswa' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT * FROM siswa', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM siswa')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM siswa')
+ 4 APPPATH\Controllers\Rapor.php(13): CodeIgniter\Database\BaseConnection->query('SELECT * FROM siswa')
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 15:35:50 --> mysqli_sql_exception: Unknown column 'nilai' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT AVG(`nil...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT AVG(`nil...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT AVG(`nil...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT AVG(`nil...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(22): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 15:35:50 --> Unknown column 'nilai' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT AVG(`nilai`) AS `nilai`
+FROM `nilai_p5bk`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT AVG(`nilai`) AS `nilai`
+FROM `nilai_p5bk`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT AVG(`nilai`) AS `nilai`
+FROM `nilai_p5bk`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT AVG(`nilai`) AS `nilai`
+FROM `nilai_p5bk`', [], false)
+ 5 APPPATH\Controllers\Rapor.php(22): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 15:54:41 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'p5bk', 3306, '', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\p5bk\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#8 E:\laragon\www\p5bk\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#9 E:\laragon\www\p5bk\system\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#11 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\p5bk\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\p5bk\system\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+#5 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+#8 E:\laragon\www\p5bk\system\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('/', 'before')
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-10-02 15:54:41 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`deleted_at` IS NULL
+AND `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(523): CodeIgniter\Model->doFind(true, '1')
+ 5 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(130): CodeIgniter\BaseModel->find('1')
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+ 7 VENDORPATH\myth\auth\src\Filters\LoginFilter.php(29): Myth\Auth\Authentication\LocalAuthenticator->check()
+ 8 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\LoginFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 9 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('E:\\', 'before')
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:12:21 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:12:21 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:12:54 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:12:54 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:13:00 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:13:00 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:13:02 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:13:02 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`id_opsi` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(20): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:15:46 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.elemen_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:15:46 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.elemen_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:16:01 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.elemen_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(24): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:16:01 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.elemen_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`id_dimensi`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `opsi_penilaian`.`kode_opsi`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`rencana_id` = :nilai_p5bk.rencana_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(24): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:18:04 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:18:04 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:18:27 --> mysqli_sql_exception: Unknown column 'opsi_penilaian.opsi_nama' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:18:27 --> Unknown column 'opsi_penilaian.opsi_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`opsi_nama`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:18:49 --> mysqli_sql_exception: Unknown column 'opsi_penilaian.opsi_nama' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:18:49 --> Unknown column 'opsi_penilaian.opsi_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:18:51 --> mysqli_sql_exception: Unknown column 'opsi_penilaian.opsi_nama' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:18:51 --> Unknown column 'opsi_penilaian.opsi_nama' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`opsi_nama`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:19:05 --> mysqli_sql_exception: Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:19:05 --> Expression #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `opsi_penilaian`.`nama_opsi`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:19:20 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:19:20 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:19:21 --> mysqli_sql_exception: Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:19:21 --> Expression #3 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.opsi_penilaian.nama_opsi' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1
+GROUP BY `nilai_p5bk`.`dimensi_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, AVG(`nilai_p5bk`.`opsi_id`) AS `opsi_id`, `opsi_penilaian`.`nama_opsi`, `dimensi`.`nama_dimensi`
+FROM `nilai_p5bk`
+JOIN `opsi_penilaian` ON `opsi_penilaian`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:
+GROUP BY `nilai_p5bk`.`dimensi_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(29): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-02 16:28:45 --> mysqli_sql_exception: Unknown column 'nilai' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Rapor.php(32): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Rapor->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-02 16:28:45 --> Unknown column 'nilai' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `dimensi_id`, `elemen_id`, `opsi_id`, AVG(nilai) as rata
+FROM `nilai_p5bk`
+WHERE `dimensi_id` = 1
+AND `elemen_id` = 1
+AND `siswa_id` = 1
+GROUP BY `dimensi_id`, `elemen_id`, `opsi_id`
+ORDER BY `dimensi_id`, `elemen_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `dimensi_id`, `elemen_id`, `opsi_id`, AVG(nilai) as rata
+FROM `nilai_p5bk`
+WHERE `dimensi_id` = 1
+AND `elemen_id` = 1
+AND `siswa_id` = 1
+GROUP BY `dimensi_id`, `elemen_id`, `opsi_id`
+ORDER BY `dimensi_id`, `elemen_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `dimensi_id`, `elemen_id`, `opsi_id`, AVG(nilai) as rata
+FROM `nilai_p5bk`
+WHERE `dimensi_id` = 1
+AND `elemen_id` = 1
+AND `siswa_id` = 1
+GROUP BY `dimensi_id`, `elemen_id`, `opsi_id`
+ORDER BY `dimensi_id`, `elemen_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `dimensi_id`, `elemen_id`, `opsi_id`, AVG(nilai) as rata
+FROM `nilai_p5bk`
+WHERE `dimensi_id` = :dimensi_id:
+AND `elemen_id` = :elemen_id:
+AND `siswa_id` = :siswa_id:
+GROUP BY `dimensi_id`, `elemen_id`, `opsi_id`
+ORDER BY `dimensi_id`, `elemen_id`', [...], false)
+ 5 APPPATH\Controllers\Rapor.php(32): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-02 16:36:28 --> Undefined variable $a1
+in APPPATH\Controllers\Rapor.php on line 13.
+ 1 APPPATH\Controllers\Rapor.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a1', 'APPPATH\\Controllers\\Rapor.php', 13)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Rapor->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Rapor))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

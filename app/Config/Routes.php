@@ -48,6 +48,8 @@ $routes->get('/test', 'Test::index');
 $routes->get('/test/(:num)', 'Test::index/$1');
 $routes->get('/test/(:num)/(:num)', 'Test::index/$1');
 
+$routes->get('/rapor', 'Rapor::index');
+
 
 
 $routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
