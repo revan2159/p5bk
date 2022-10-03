@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 28, 2022 at 03:28 PM
+-- Generation Time: Oct 03, 2022 at 11:20 PM
 -- Server version: 5.7.38
--- PHP Version: 7.4.19
+-- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Database: `p5bk`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `aspek_penilaian`
+--
+
+CREATE TABLE `aspek_penilaian` (
+  `aspek_id` int(11) NOT NULL,
+  `dimensi_id` int(11) UNSIGNED NOT NULL,
+  `rencana_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `aspek_penilaian`
+--
+
+INSERT INTO `aspek_penilaian` (`aspek_id`, `dimensi_id`, `rencana_id`) VALUES
+(16, 1, 1),
+(17, 2, 1),
+(18, 3, 1);
 
 -- --------------------------------------------------------
 
@@ -52,9 +73,9 @@ CREATE TABLE `auth_groups` (
 --
 
 INSERT INTO `auth_groups` (`id`, `name`, `description`) VALUES
-(1, 'admin', 'Administrator'),
-(2, 'guru', 'guru mapel'),
-(3, 'wali_kelas', 'Guru Walikelas');
+(1, 'admin', 'Admin Permision'),
+(2, 'guru', 'Ini Untuk guru'),
+(3, 'wali_kelas', 'walikelas ');
 
 -- --------------------------------------------------------
 
@@ -73,7 +94,11 @@ CREATE TABLE `auth_groups_permissions` (
 
 INSERT INTO `auth_groups_permissions` (`group_id`, `permission_id`) VALUES
 (1, 1),
+(1, 1),
 (1, 2),
+(1, 2),
+(1, 3),
+(2, 1),
 (2, 2);
 
 -- --------------------------------------------------------
@@ -93,6 +118,8 @@ CREATE TABLE `auth_groups_users` (
 
 INSERT INTO `auth_groups_users` (`group_id`, `user_id`) VALUES
 (1, 1),
+(1, 1),
+(2, 2),
 (2, 2),
 (2, 5);
 
@@ -116,39 +143,22 @@ CREATE TABLE `auth_logins` (
 --
 
 INSERT INTO `auth_logins` (`id`, `ip_address`, `email`, `user_id`, `date`, `success`) VALUES
-(1, '::1', 'cahya', 1, '2022-09-26 08:12:38', 0),
-(2, '::1', 'cahya@gmail.com', 1, '2022-09-26 08:13:09', 1),
-(3, '::1', 'cahya@gmail.com', 1, '2022-09-26 08:14:25', 1),
-(4, '::1', 'cahya@gmail.com', 1, '2022-09-26 08:36:39', 1),
-(5, '::1', 'revanto@gmail.com', 5, '2022-09-26 08:37:00', 1),
-(6, '::1', 'cahya@gmail.com', 1, '2022-09-26 08:38:15', 1),
-(7, '::1', 'revanto@gmail.com', 5, '2022-09-26 08:43:56', 1),
-(8, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:07:51', 1),
-(9, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:12:06', 1),
-(10, '::1', 'revanto@gmail.com', 5, '2022-09-26 09:12:19', 1),
-(11, '::1', 'revanto', 5, '2022-09-26 09:15:57', 0),
-(12, '::1', 'revantoc@gmail.com', 5, '2022-09-26 09:18:57', 1),
-(13, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:22:05', 1),
-(14, '::1', 'revantoc@gmail.com', 5, '2022-09-26 09:26:14', 1),
-(15, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:29:59', 1),
-(16, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:32:58', 1),
-(17, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:47:38', 1),
-(18, '::1', 'revantoc@gmail.com', 5, '2022-09-26 09:48:13', 1),
-(19, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:52:16', 1),
-(20, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:53:02', 1),
-(21, '::1', 'cahya@gmail.com', 1, '2022-09-26 09:57:40', 1),
-(22, '::1', 'revantoc@gmail.com', 5, '2022-09-26 09:57:53', 1),
-(23, '::1', 'cahya@gmail.com', 1, '2022-09-26 10:03:47', 1),
-(24, '::1', 'revantoc@gmail.com', 5, '2022-09-26 10:05:35', 1),
-(25, '::1', 'cahya@gmail.com', 1, '2022-09-26 10:33:37', 1),
-(26, '::1', 'cahya@gmail.com', 1, '2022-09-26 10:44:57', 1),
-(27, '::1', 'cahya@gmail.com', 1, '2022-09-27 04:12:59', 1),
-(28, '::1', 'cahya@gmail.com', 1, '2022-09-27 07:43:23', 1),
-(29, '::1', 'revantoc@gmail.com', 5, '2022-09-27 09:25:56', 1),
-(30, '::1', 'cahya@gmail.com', 1, '2022-09-27 09:33:15', 1),
-(31, '::1', 'cahya@gmail.com', 1, '2022-09-28 16:05:56', 1),
-(32, '::1', 'revantoc@gmail.com', 5, '2022-09-28 16:42:25', 1),
-(33, '::1', 'cahya@gmail.com', 1, '2022-09-28 16:48:06', 1);
+(1, '::1', 'cahya@gmail.com', 1, '2022-09-26 19:58:28', 1),
+(2, '::1', 'revanto@gmail.com', 2, '2022-09-26 19:58:45', 1),
+(3, '::1', 'cahya@gmail.com', 1, '2022-09-26 19:59:15', 1),
+(4, '::1', 'cahya@gmail.com', 1, '2022-09-26 20:37:09', 1),
+(5, '::1', 'revanto@gmail.com', 2, '2022-09-26 20:37:27', 1),
+(6, '::1', 'cahya@gmail.com', 1, '2022-09-27 19:33:54', 1),
+(7, '::1', 'cahya@gmail.com', 1, '2022-09-28 10:47:25', 1),
+(8, '::1', 'cahya@gmail.com', 1, '2022-09-29 18:02:50', 1),
+(9, '::1', 'cahya@gmail.com', 1, '2022-09-29 19:25:42', 1),
+(10, '::1', 'cahya@gmail.com', 1, '2022-09-30 14:38:10', 1),
+(11, '::1', 'cahya@gmail.com', 1, '2022-10-01 17:22:53', 1),
+(12, '::1', 'cahya', NULL, '2022-10-02 06:51:21', 0),
+(13, '::1', 'cahya', NULL, '2022-10-02 06:51:35', 0),
+(14, '::1', 'cahya@gmail.com', 1, '2022-10-02 06:52:35', 1),
+(15, '::1', 'cahya@gmail.com', 1, '2022-10-02 15:30:32', 1),
+(16, '::1', 'cahya@gmail.com', 1, '2022-10-03 20:27:33', 1);
 
 -- --------------------------------------------------------
 
@@ -167,8 +177,9 @@ CREATE TABLE `auth_permissions` (
 --
 
 INSERT INTO `auth_permissions` (`id`, `name`, `description`) VALUES
-(1, 'manage-user', 'Mengubah Semua data User'),
-(2, 'manage-profil', 'Mengubah Data Profil');
+(1, 'manage-profil', 'managemen profil user'),
+(2, 'manage-user', ''),
+(3, 'manage-nilai', 'input nilai');
 
 -- --------------------------------------------------------
 
@@ -209,6 +220,16 @@ CREATE TABLE `auth_users_permissions` (
   `user_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `permission_id` int(11) UNSIGNED NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `auth_users_permissions`
+--
+
+INSERT INTO `auth_users_permissions` (`user_id`, `permission_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 1);
 
 -- --------------------------------------------------------
 
@@ -292,31 +313,84 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `version`, `class`, `group`, `namespace`, `time`, `batch`) VALUES
-(1, '2017-11-20-223112', 'Myth\\Auth\\Database\\Migrations\\CreateAuthTables', 'default', 'Myth\\Auth', 1664191501, 1),
-(2, '2022-09-27-113700', 'App\\Database\\Migrations\\CreateTableSekolah', 'default', 'App', 1664282042, 2),
-(3, '2022-09-27-130742', 'App\\Database\\Migrations\\CreateTbTahunAjar', 'default', 'App', 1664284300, 3),
-(4, '2022-09-27-132117', 'App\\Database\\Migrations\\CreateTbSemester', 'default', 'App', 1664284982, 4),
-(5, '2022-09-28-013117', 'App\\Database\\Migrations\\CreateTableSiswa', 'default', 'App', 1664359052, 5),
-(6, '2022-09-28-013607', 'App\\Database\\Migrations\\CreateTableKelas', 'default', 'App', 1664359053, 5),
-(7, '2022-09-28-095116', 'App\\Database\\Migrations\\CreateTableP5bk', 'default', 'App', 1664359053, 5),
-(8, '2022-09-28-101053', 'App\\Database\\Migrations\\CreateTableDimensi', 'default', 'App', 1664360114, 6),
-(9, '2022-09-28-101239', 'App\\Database\\Migrations\\CreateTableElemen', 'default', 'App', 1664360114, 6),
-(10, '2022-09-28-101343', 'App\\Database\\Migrations\\CreateTableSubElemen', 'default', 'App', 1664360114, 6);
+(1, '2022-09-27-113700', 'App\\Database\\Migrations\\CreateTableSekolah', 'default', 'App', 1664330759, 1),
+(2, '2022-09-27-130742', 'App\\Database\\Migrations\\CreateTbTahunAjar', 'default', 'App', 1664330759, 1),
+(3, '2022-09-27-132117', 'App\\Database\\Migrations\\CreateTbSemester', 'default', 'App', 1664330759, 1),
+(4, '2022-09-28-013117', 'App\\Database\\Migrations\\CreateTableSiswa', 'default', 'App', 1664330759, 1),
+(5, '2022-09-28-013607', 'App\\Database\\Migrations\\CreateTableKelas', 'default', 'App', 1664330759, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `p5bk`
+-- Table structure for table `nilai_p5bk`
 --
 
-CREATE TABLE `p5bk` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `kelas` varchar(255) NOT NULL,
-  `judul_proyek` varchar(255) NOT NULL,
-  `tema_proyek` varchar(255) NOT NULL,
-  `deskripsi_proyek` varchar(255) NOT NULL,
-  `tema_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE `nilai_p5bk` (
+  `nilai_id` int(11) NOT NULL,
+  `siswa_id` int(11) UNSIGNED DEFAULT NULL,
+  `aspek_id` int(11) DEFAULT NULL,
+  `rencana_id` int(11) DEFAULT NULL,
+  `dimensi_id` int(11) UNSIGNED DEFAULT NULL,
+  `elemen_id` int(11) UNSIGNED DEFAULT NULL,
+  `opsi_id` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `nilai_p5bk`
+--
+
+INSERT INTO `nilai_p5bk` (`nilai_id`, `siswa_id`, `aspek_id`, `rencana_id`, `dimensi_id`, `elemen_id`, `opsi_id`) VALUES
+(1, 1, 16, 1, 1, 1, 2),
+(2, 1, 16, 1, 1, 2, 2),
+(3, 1, 16, 1, 1, 3, 3),
+(4, 1, 16, 1, 1, 4, 3),
+(5, 1, 16, 1, 1, 5, 3);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `opsi_penilaian`
+--
+
+CREATE TABLE `opsi_penilaian` (
+  `opsi_id` int(11) NOT NULL,
+  `kode_opsi` varchar(25) NOT NULL,
+  `nama_opsi` varchar(255) NOT NULL,
+  `deskripsi_opsi` text NOT NULL,
+  `opsi_warna` varchar(10) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `opsi_penilaian`
+--
+
+INSERT INTO `opsi_penilaian` (`opsi_id`, `kode_opsi`, `nama_opsi`, `deskripsi_opsi`, `opsi_warna`) VALUES
+(1, 'BB', 'Belum Berkembang', 'siswa belum berkembang', 'green'),
+(2, 'MB', 'Mulai Berkembang', '', NULL),
+(3, 'BSH', 'Berkembang Sesuai Harapan', '', NULL),
+(4, 'SB', 'Sangat Berkembang', '', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rencana_budaya_kerja`
+--
+
+CREATE TABLE `rencana_budaya_kerja` (
+  `rencana_id` int(11) NOT NULL,
+  `kelas_id` int(11) UNSIGNED DEFAULT NULL,
+  `nama` varchar(255) DEFAULT NULL,
+  `deskripsi` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `rencana_budaya_kerja`
+--
+
+INSERT INTO `rencana_budaya_kerja` (`rencana_id`, `kelas_id`, `nama`, `deskripsi`) VALUES
+(1, 1, 'Proyek 1', 'MEMBUAT AYANG'),
+(9, 1, 'P2', 'membuat adasda'),
+(10, 1, 'p3', 'asdasdasda');
 
 -- --------------------------------------------------------
 
@@ -394,6 +468,14 @@ CREATE TABLE `tb_kelas` (
   `kelas_deskripsi` text
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `tb_kelas`
+--
+
+INSERT INTO `tb_kelas` (`kelas_id`, `kelas_nama`, `kelas_wali`, `kelas_tahun_ajaran`, `kelas_jurusan`, `kelas_deskripsi`) VALUES
+(1, 'X Keb A', 'Cahya R', '2022', 'Keperawatan', 'Kelas 10'),
+(2, 'X Keb B', 'cahya R', '2022', 'Keperawatan', NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -419,7 +501,7 @@ CREATE TABLE `tb_sekolah` (
 --
 
 INSERT INTO `tb_sekolah` (`sekolah_id`, `sekolah_npsn`, `sekolah_nama`, `sekolah_alamat`, `sekolah_kodepos`, `sekolah_telepon`, `sekolah_email`, `sekolah_website`, `sekolah_created_at`, `sekolah_updated_at`, `sekolah_logo`) VALUES
-(1, 'SMK dasdasda', 'asdasdasd', 'adasdasdasd', 'dasd', 'asdasd', 'asdasda', 'asdasd', NULL, NULL, 'adasdas');
+(1, '255255255255', 'SMK RAHANI HUSADA', 'Plawikan ', '84564', '089542266651', 'sekolah@mail.com', 'http://sekolah.com', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -438,13 +520,6 @@ CREATE TABLE `tb_semester` (
   `updated_at` datetime DEFAULT NULL,
   `last_sync` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Dumping data for table `tb_semester`
---
-
-INSERT INTO `tb_semester` (`semester_id`, `nama`, `periode_aktif`, `tanggal_mulai`, `tanggal_selesai`, `tahun_ajaran_id`, `created_at`, `updated_at`, `last_sync`) VALUES
-('1', 'Ganil', NULL, NULL, NULL, '1', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -472,6 +547,14 @@ CREATE TABLE `tb_siswa` (
   `siswa_created_at` datetime DEFAULT NULL,
   `siswa_updated_at` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tb_siswa`
+--
+
+INSERT INTO `tb_siswa` (`siswa_id`, `siswa_nisn`, `siswa_nis`, `siswa_nama`, `siswa_jk`, `siswa_tempat_lahir`, `siswa_tanggal_lahir`, `siswa_agama`, `siswa_alamat`, `siswa_telepon`, `siswa_email`, `siswa_kelas`, `siswa_tahun_masuk`, `siswa_tahun_lulus`, `siswa_status`, `siswa_foto`, `siswa_created_at`, `siswa_updated_at`) VALUES
+(1, '123', '123', 'cahya', 'L', 'klaten', '2022-09-08', 'islam', 'karang sumyang', '08954222', 'cahya@mail.com', 1, 2010, 2022, 'Aktif', NULL, NULL, NULL),
+(2, '1234', '321', 'Revanto', 'P', NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -530,13 +613,20 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nip`, `fullname`, `email`, `username`, `avatar`, `alamat`, `password_hash`, `reset_hash`, `reset_at`, `reset_expires`, `activate_hash`, `status`, `status_message`, `active`, `force_pass_reset`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, '', '', 'cahya@gmail.com', 'cahya', NULL, NULL, '$2y$10$A5ICBlk9VGarXaGqoejYh.oxWJ4/Elgn.QGVLOkPydR9TiCGLTaqm', NULL, NULL, NULL, '22e208e60b80c5bec70172ff06fa2e54', NULL, NULL, 1, 0, '2022-09-26 08:00:21', '2022-09-26 08:00:21', NULL),
-(2, '', '', 'dono@gmal.com', 'dono', NULL, NULL, '$2y$10$Eq4yvxlIwCxl10yCmyoxpeN3jGNoSvAqDfIP/KwtsXoZRiPcE0hKS', NULL, NULL, NULL, '96835147afa6621a8fee30099bfe95b6', NULL, NULL, 1, 0, '2022-09-26 08:02:13', '2022-09-26 08:02:13', NULL),
-(5, '', '', 'revantoc@gmail.com', 'revanto', 'avatar1.png', NULL, '$2y$10$cOYHnM2rx2Xfw.GT8f70U.VKioSxNa.RS82dTrVEqTCLC1hx6EnM.', NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, '2022-09-26 08:30:45', '2022-09-26 08:30:45', NULL);
+(1, '', '', 'cahya@gmail.com', 'cahya', NULL, NULL, '$2y$10$SEZzN0n7vvZvT1J/gQOwk.IjLk1CJqxQYc37owjTsx5/6sLCG42fW', NULL, NULL, NULL, '31cecabf2fe8073752d010a32d17c9cf', NULL, NULL, 1, 0, '2022-09-26 19:50:51', '2022-09-26 19:50:51', NULL),
+(2, '', '', 'revanto@gmail.com', 'revanto', NULL, NULL, '$2y$10$ZPIBR7rRtS9mQmnLEc57f.yRri7nmtShR81AhYyBmuryco3opGo.u', NULL, NULL, NULL, 'aab858cc6a150eef33a4624bff792485', NULL, NULL, 1, 0, '2022-09-26 19:52:01', '2022-09-26 19:52:01', NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `aspek_penilaian`
+--
+ALTER TABLE `aspek_penilaian`
+  ADD PRIMARY KEY (`aspek_id`),
+  ADD KEY `get_dimensi` (`dimensi_id`),
+  ADD KEY `get_perencanaaan` (`rencana_id`);
 
 --
 -- Indexes for table `auth_activation_attempts`
@@ -619,17 +709,35 @@ ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `p5bk`
+-- Indexes for table `nilai_p5bk`
 --
-ALTER TABLE `p5bk`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `nilai_p5bk`
+  ADD PRIMARY KEY (`nilai_id`),
+  ADD KEY `get_siswa` (`siswa_id`),
+  ADD KEY `get _elemen` (`elemen_id`),
+  ADD KEY `get_opsi` (`opsi_id`),
+  ADD KEY `get_rencana` (`rencana_id`),
+  ADD KEY `gotodimensi` (`dimensi_id`),
+  ADD KEY `gotoaspek` (`aspek_id`);
+
+--
+-- Indexes for table `opsi_penilaian`
+--
+ALTER TABLE `opsi_penilaian`
+  ADD PRIMARY KEY (`opsi_id`);
+
+--
+-- Indexes for table `rencana_budaya_kerja`
+--
+ALTER TABLE `rencana_budaya_kerja`
+  ADD PRIMARY KEY (`rencana_id`),
+  ADD KEY `get_kelas` (`kelas_id`);
 
 --
 -- Indexes for table `sub_elemen`
 --
 ALTER TABLE `sub_elemen`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `toelemen` (`elemen_id`);
+  ADD KEY `get_elemen` (`elemen_id`);
 
 --
 -- Indexes for table `tb_kelas`
@@ -654,7 +762,8 @@ ALTER TABLE `tb_semester`
 -- Indexes for table `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
-  ADD PRIMARY KEY (`siswa_id`);
+  ADD PRIMARY KEY (`siswa_id`),
+  ADD KEY `to_kelas` (`siswa_kelas`);
 
 --
 -- Indexes for table `tb_tahun_ajaran`
@@ -675,6 +784,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `aspek_penilaian`
+--
+ALTER TABLE `aspek_penilaian`
+  MODIFY `aspek_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
 -- AUTO_INCREMENT for table `auth_activation_attempts`
 --
 ALTER TABLE `auth_activation_attempts`
@@ -690,13 +805,13 @@ ALTER TABLE `auth_groups`
 -- AUTO_INCREMENT for table `auth_logins`
 --
 ALTER TABLE `auth_logins`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `auth_permissions`
 --
 ALTER TABLE `auth_permissions`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `auth_reset_attempts`
@@ -705,46 +820,34 @@ ALTER TABLE `auth_reset_attempts`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `auth_tokens`
---
-ALTER TABLE `auth_tokens`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `dimensi`
---
-ALTER TABLE `dimensi`
-  MODIFY `id_dimensi` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT for table `elemen`
---
-ALTER TABLE `elemen`
-  MODIFY `id_elemen` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
-
---
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `p5bk`
+-- AUTO_INCREMENT for table `nilai_p5bk`
 --
-ALTER TABLE `p5bk`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+ALTER TABLE `nilai_p5bk`
+  MODIFY `nilai_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT for table `sub_elemen`
+-- AUTO_INCREMENT for table `opsi_penilaian`
 --
-ALTER TABLE `sub_elemen`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+ALTER TABLE `opsi_penilaian`
+  MODIFY `opsi_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `rencana_budaya_kerja`
+--
+ALTER TABLE `rencana_budaya_kerja`
+  MODIFY `rencana_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
-  MODIFY `kelas_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `kelas_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tb_sekolah`
@@ -756,44 +859,18 @@ ALTER TABLE `tb_sekolah`
 -- AUTO_INCREMENT for table `tb_siswa`
 --
 ALTER TABLE `tb_siswa`
-  MODIFY `siswa_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `users`
---
-ALTER TABLE `users`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `siswa_id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `auth_groups_permissions`
+-- Constraints for table `aspek_penilaian`
 --
-ALTER TABLE `auth_groups_permissions`
-  ADD CONSTRAINT `auth_groups_permissions_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `auth_groups_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `auth_groups_users`
---
-ALTER TABLE `auth_groups_users`
-  ADD CONSTRAINT `auth_groups_users_group_id_foreign` FOREIGN KEY (`group_id`) REFERENCES `auth_groups` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `auth_groups_users_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `auth_tokens`
---
-ALTER TABLE `auth_tokens`
-  ADD CONSTRAINT `auth_tokens_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `auth_users_permissions`
---
-ALTER TABLE `auth_users_permissions`
-  ADD CONSTRAINT `auth_users_permissions_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `auth_permissions` (`id`) ON DELETE CASCADE,
-  ADD CONSTRAINT `auth_users_permissions_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+ALTER TABLE `aspek_penilaian`
+  ADD CONSTRAINT `get_dimensi` FOREIGN KEY (`dimensi_id`) REFERENCES `dimensi` (`id_dimensi`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `get_perencanaaan` FOREIGN KEY (`rencana_id`) REFERENCES `rencana_budaya_kerja` (`rencana_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `elemen`
@@ -802,16 +879,39 @@ ALTER TABLE `elemen`
   ADD CONSTRAINT `to_dimensi` FOREIGN KEY (`dimensi_id`) REFERENCES `dimensi` (`id_dimensi`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
+-- Constraints for table `nilai_p5bk`
+--
+ALTER TABLE `nilai_p5bk`
+  ADD CONSTRAINT `get _elemen` FOREIGN KEY (`elemen_id`) REFERENCES `elemen` (`id_elemen`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `get_opsi` FOREIGN KEY (`opsi_id`) REFERENCES `opsi_penilaian` (`opsi_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `get_rencana` FOREIGN KEY (`rencana_id`) REFERENCES `rencana_budaya_kerja` (`rencana_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `get_siswa` FOREIGN KEY (`siswa_id`) REFERENCES `tb_siswa` (`siswa_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `gotoaspek` FOREIGN KEY (`aspek_id`) REFERENCES `aspek_penilaian` (`aspek_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `gotodimensi` FOREIGN KEY (`dimensi_id`) REFERENCES `dimensi` (`id_dimensi`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+
+--
+-- Constraints for table `rencana_budaya_kerja`
+--
+ALTER TABLE `rencana_budaya_kerja`
+  ADD CONSTRAINT `get_kelas` FOREIGN KEY (`kelas_id`) REFERENCES `tb_kelas` (`kelas_id`);
+
+--
 -- Constraints for table `sub_elemen`
 --
 ALTER TABLE `sub_elemen`
-  ADD CONSTRAINT `toelemen` FOREIGN KEY (`elemen_id`) REFERENCES `elemen` (`id_elemen`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `get_elemen` FOREIGN KEY (`elemen_id`) REFERENCES `elemen` (`id_elemen`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `tb_semester`
 --
 ALTER TABLE `tb_semester`
   ADD CONSTRAINT `tb_semester_tahun_ajaran_id_foreign` FOREIGN KEY (`tahun_ajaran_id`) REFERENCES `tb_tahun_ajaran` (`tahun_ajaran_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Constraints for table `tb_siswa`
+--
+ALTER TABLE `tb_siswa`
+  ADD CONSTRAINT `to_kelas` FOREIGN KEY (`siswa_kelas`) REFERENCES `tb_kelas` (`kelas_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
