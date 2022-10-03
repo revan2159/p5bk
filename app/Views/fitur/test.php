@@ -124,7 +124,7 @@
                         //$get_nilai->where('nilai_p5bk.rencana_id', $projek['rencana_id']);
                         //$get_nilai->where('nilai_p5bk.dimensi_id', $item['id_dimensi']);
                         $nilai = $get_nilai->get()->getResultArray();
-
+                        ok
                     ?>
 
 
