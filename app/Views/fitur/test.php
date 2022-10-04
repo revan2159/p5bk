@@ -1,13 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-<?php
-
-// dd($dimensi);
-
-?>
-
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +8,76 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+    <style>
+        body {
+            background: #FFFFFF !important;
+            background-color: #FFFFFF;
+            font-family: Times;
+            font-size: 12px;
+        }
+
+        h3 {
+            font-size: 14px;
+        }
+
+        table tr td,
+        table tr th {
+            padding: 5px;
+        }
+
+        .table th {
+            background-color: #FFFFCC !important
+        }
+
+        .strong,
+        b {
+            font-weight: bold;
+        }
+
+        .cetakan {
+            font-size: 14px;
+            line-height: 2em;
+        }
+
+        #cover_utama {
+            width: 100%;
+            height: 100%;
+            border: 4px double #0000FF;
+        }
+
+        .center {
+            margin: auto;
+            width: 50%;
+        }
+
+        div.text-center {
+            text-align: center !important;
+        }
+
+        .badge {
+            border: 1px solid #777;
+            background-color: #777;
+            border-radius: 4em !important;
+            background-clip: border-box;
+            padding: 1em;
+        }
+
+        .bg-blue {
+            background-color: #0073b7 !important;
+        }
+
+        .bg-yellow {
+            background-color: #f39c12 !important;
+        }
+
+        .bg-red {
+            background-color: #dd4b39 !important;
+        }
+
+        .bg-green {
+            background-color: #00a65a !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -55,37 +118,34 @@
     <!-- Table Project -->
     <table class="table table-bordered border-primary" style="margin-top: 10px;">
         <?php
+        $no = 1;
         foreach ($rencana as $item) :
         ?>
             <tr>
-                <td><strong><?= $item['nama'] ?></strong></td>
+                <td><strong>Projek <?= $no++ ?> | <?= $item['nama'] ?></strong></td>
             </tr>
             <tr>
                 <td><?= $item['deskripsi'] ?></td>
             </tr>
-
-
         <?php endforeach ?>
-
-
     </table>
 
 
     <!-- Table Opsi -->
     <table class="table table-bordered border-primary">
-        <thead>
-            <tr>
-                <?php
-                foreach ($opsi as $item) :
-                ?>
-                    <td><span class="badge bg-primary">&nbsp;&nbsp;</span></td>
-                    <td>
-                        <strong><?= $item['kode_opsi'] ?>. <?= $item['nama_opsi'] ?></strong><br>
-                        <?= $item['deskripsi_opsi'] ?>
-                    </td>
-                <?php endforeach ?>
-            </tr>
-        </thead>
+        <tr>
+            <?php
+            foreach ($opsi as $item) :
+            ?>
+                <td style="width: 10px">
+                    <span class="badge bg-<?= $item['opsi_warna'] ?>">&nbsp;&nbsp;</span>
+                </td>
+                <td>
+                    <strong class="strong"><?= $item['kode_opsi'] ?>. <?= $item['nama_opsi'] ?></strong><br>
+                    <?= $item['deskripsi_opsi'] ?>
+                </td>
+            <?php endforeach ?>
+        </tr>
     </table>
     <br><br>
 
@@ -100,7 +160,6 @@
                 ?>
                     <th class="text-center"><?= $budaya['nama_dimensi'] ?></th>
                 <?php endforeach ?>
-
             </tr>
         </thead>
         <tbody>
@@ -112,150 +171,116 @@
                     <td><?= $no++ ?>. <?= $projek['nama'] ?></td>
                     <?php
                     foreach ($dimensi as $item) :
-                        $db = \Config\Database::connect();
-                        $get_aspek = $db->table('aspek_penilaian');
-                        $get_aspek->select('aspek_penilaian.dimensi_id');
-                        $get_aspek->where('aspek_penilaian.rencana_id', $projek['rencana_id']);
-                        $aspek = $get_aspek->get()->getResultArray();
+                        echo '<td class="text-center">';
+                        foreach ($nilai as $n) {
+                            if ($n['dimensi_id'] == $item['id_dimensi'] && $n['rencana_id'] == $projek['rencana_id']) {
+                                $avg = 0;
+                                $count = 0;
+                                foreach ($nilai as $n2) {
+                                    if ($n2['dimensi_id'] == $item['id_dimensi']) {
+                                        $avg += $n2['opsi_id'];
+                                        $count++;
+                                    }
+                                }
+                                $avg = $avg / $count;
+                                $avg = round($avg, 0, PHP_ROUND_HALF_UP);
 
-                        $get_nilai = $db->table('nilai_p5bk');
-                        $get_nilai->select('nilai_p5bk.opsi_id, nilai_p5bk.elemen_id,nilai_p5bk.dimensi_id');
-                        $get_nilai->where('nilai_p5bk.siswa_id', $siswa['siswa_id']);
-                        //$get_nilai->where('nilai_p5bk.rencana_id', $projek['rencana_id']);
-                        //$get_nilai->where('nilai_p5bk.dimensi_id', $item['id_dimensi']);
-                        $nilai = $get_nilai->get()->getResultArray();
-                        ok
+                                if (!$avg) {
+                                    $predikat     = '-';
+                                } elseif ($avg >= 4) {
+                                    $predikat     = '<span class="badge bg-green">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+                                } elseif ($avg >= 3) {
+                                    $predikat     = '<span class="badge bg-red">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+                                } elseif ($avg >= 2) {
+                                    $predikat     = '<span class="badge bg-blue">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+                                } elseif ($avg >= 1) {
+                                    $predikat     = '<span class="badge bg-yellow">&nbsp;&nbsp;&nbsp;&nbsp;</span>';
+                                }
+                                //show 1 data only
+                                echo $predikat;
+                                break;
+                            }
+                        }
+                        echo '</td>';
                     ?>
-
-
-                        <td class="text-center">d</td>
                     <?php endforeach
                     ?>
-
                 </tr>
-
             <?php endforeach; ?>
-
         </tbody>
     </table>
     <br> <br>
 
-    <!-- Table nilai -->
-    <table class="table table-bordered border-primary" style="margin-top: 10px;">
-        <thead>
-            <tr>
-                <th>Projek 1 | Judul Rencana/projek</th>
-
-                <th style="width: 100px;" class="text-center">kode opsi</th>
-                <th style="width: 100px;" class="text-center">kode opsi</th>
-                <th style="width: 100px;" class="text-center">kode opsi</th>
-                <th style="width: 100px;" class="text-center">kode opsi</th>
-
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td colspan="7"><strong>Dimensi yang dinilai</strong></td>
-            </tr>
-
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
 
 
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
+    <?php
+    $no = 1;
+    foreach ($rencana as $itm) : ?>
+        <table class="table table-bordered border-primary" style="margin-top: 10px;">
+            <thead>
+                <tr>
+                    <th>Projek <?= $no++ ?> | <?= $itm['nama'] ?></th>
+                    <?php foreach ($opsi as $p) : ?>
+                        <th style="width: 100px;" class="text-center"><?= $p['kode_opsi'] ?></th>
+                    <?php endforeach; ?>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach ($aspek as $item) :
+                    if ($item['rencana_id'] == $itm['rencana_id']) :
+                        foreach ($dimensi as $budaya) :
+                            if ($item['dimensi_id'] == $budaya['id_dimensi']) :
+                ?>
+                                <tr>
+                                    <td colspan="7"><strong class="strong"><?= $budaya['nama_dimensi'] ?></strong></td>
+                                </tr>
+                                <?php
+                                foreach ($elemen as $e) :
+                                    //if dimensi id == elemen dimensi id
+                                    if ($e['dimensi_id'] == $budaya['id_dimensi']) :
+                                ?>
+                                        <tr>
+                                            <td><strong class="strong"><?= $e['nama_elemen'] ?>.</strong> <?= $e['elemen_deskripsi'] ?></td>
+                                            <?php
+                                            foreach ($opsi as $p) : ?>
+                                                <td class="text-center strong">
+                                                    <?php
+                                                    foreach ($nilai as $n) :
+                                                        if ($n['elemen_id'] == $e['id_elemen'] && $n['opsi_id'] == $p['opsi_id']) :
+                                                            echo '√';
+                                                        endif;
+                                                    endforeach;
+                                                    ?>
+                                                </td>
 
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
+                                            <?php
+                                            endforeach; ?>
+                                        </tr>
+                                <?php
+                                    endif;
+                                endforeach;
+                                ?>
+                                </tr>
+                <?php
+                            endif;
+                        endforeach;
+                    endif;
+                endforeach;
+                ?>
+            </tbody>
+        </table>
 
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-            </tr>
-
-            <tr>
-                <td colspan="7"><strong>Dimensi yang dinilai</strong></td>
-            </tr>
-
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-            </tr>
-            <tr>
-                <td><strong>Tambilkan elemen dari dimensi yang dinilai</strong> dan tampilkan capaian/deskrisi</td>
-
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-                <td class="text-center">&check;</td>
-
-            </tr>
-
-        </tbody>
-    </table>
+    <?php endforeach; ?>
 
     <table class="table table-bordered border-primary" style="margin-top:10px;">
         <tr>
             <th>Catatan Kegiatan</th>
         </tr>
         <tr>
-            <td>{{($get_siswa->catatan_budaya_kerja) ? $get_siswa->catatan_budaya_kerja->catatan : '-'}}</td>
+            <td><?= $catatan['catatan'] ?></td>
         </tr>
     </table>
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>

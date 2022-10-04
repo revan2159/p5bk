@@ -519,3 +519,1102 @@ in APPPATH\Views\fitur\test.php on line 125.
  8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:23:26 --> Undefined constant "ok"
+in APPPATH\Views\fitur\test.php on line 127.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(61): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:34:42 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 123.
+ 1 APPPATH\Views\fitur\test.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 123)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:34:56 --> Cannot access offset of type string on string
+in APPPATH\Views\fitur\test.php on line 123.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:37:23 --> Undefined array key "id_dimensi"
+in APPPATH\Views\fitur\test.php on line 118.
+ 1 APPPATH\Views\fitur\test.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:38:14 --> Undefined array key "id_rencana"
+in APPPATH\Views\fitur\test.php on line 118.
+ 1 APPPATH\Views\fitur\test.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_rencana"', 'APPPATH\\Views\\fitur\\test.php', 118)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:38:36 --> Undefined array key "nilai"
+in APPPATH\Views\fitur\test.php on line 119.
+ 1 APPPATH\Views\fitur\test.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai"', 'APPPATH\\Views\\fitur\\test.php', 119)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:42:30 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 131.
+ 1 APPPATH\Views\fitur\test.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 131)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:49:12 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Views\fitur\test.php on line 124.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:49:31 --> count(): Argument #1 ($value) must be of type Countable|array, string given
+in APPPATH\Views\fitur\test.php on line 124.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:50:17 --> Undefined array key "dimensi_id"
+in APPPATH\Views\fitur\test.php on line 125.
+ 1 APPPATH\Views\fitur\test.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dimensi_id"', 'APPPATH\\Views\\fitur\\test.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:50:44 --> Undefined array key "dimensi_id"
+in APPPATH\Views\fitur\test.php on line 125.
+ 1 APPPATH\Views\fitur\test.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dimensi_id"', 'APPPATH\\Views\\fitur\\test.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:50:56 --> Undefined array key "id_dimensi"
+in APPPATH\Views\fitur\test.php on line 125.
+ 1 APPPATH\Views\fitur\test.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:50:57 --> Undefined array key "id_dimensi"
+in APPPATH\Views\fitur\test.php on line 125.
+ 1 APPPATH\Views\fitur\test.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 125)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 17:57:16 --> Cannot access offset of type string on string
+in APPPATH\Views\fitur\test.php on line 126.
+ 1 APPPATH\Views\fitur\test.php(131): fidDuplikat([...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:00:53 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 124.
+ 1 APPPATH\Views\fitur\test.php(124): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 124)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:27:09 --> Division by zero
+in APPPATH\Views\fitur\test.php on line 199.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:27:35 --> Division by zero
+in APPPATH\Views\fitur\test.php on line 199.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 4 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 6 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:32:02 --> Undefined array key "kode_opsi"
+in APPPATH\Views\fitur\test.php on line 196.
+ 1 APPPATH\Views\fitur\test.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_opsi"', 'APPPATH\\Views\\fitur\\test.php', 196)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:32:40 --> Undefined array key "kode_opsi"
+in APPPATH\Views\fitur\test.php on line 196.
+ 1 APPPATH\Views\fitur\test.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_opsi"', 'APPPATH\\Views\\fitur\\test.php', 196)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:32:58 --> Undefined array key "kode_opsi"
+in APPPATH\Views\fitur\test.php on line 196.
+ 1 APPPATH\Views\fitur\test.php(196): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_opsi"', 'APPPATH\\Views\\fitur\\test.php', 196)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:33:23 --> Undefined array key "kode_opsi"
+in APPPATH\Views\fitur\test.php on line 193.
+ 1 APPPATH\Views\fitur\test.php(193): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kode_opsi"', 'APPPATH\\Views\\fitur\\test.php', 193)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:34:57 --> Undefined array key "dimensi_id"
+in APPPATH\Views\fitur\test.php on line 195.
+ 1 APPPATH\Views\fitur\test.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dimensi_id"', 'APPPATH\\Views\\fitur\\test.php', 195)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:38:06 --> Undefined array key "id_dimensi"
+in APPPATH\Views\fitur\test.php on line 191.
+ 1 APPPATH\Views\fitur\test.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 191)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:39:05 --> Undefined array key "id_rencana"
+in APPPATH\Views\fitur\test.php on line 195.
+ 1 APPPATH\Views\fitur\test.php(195): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_rencana"', 'APPPATH\\Views\\fitur\\test.php', 195)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 18:58:59 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\fitur\test.php on line 189.
+ 1 APPPATH\Views\fitur\test.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\fitur\\test.php', 189)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(64): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:21:09 --> Undefined array key "nama"
+in APPPATH\Views\fitur\test.php on line 244.
+ 1 APPPATH\Views\fitur\test.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'APPPATH\\Views\\fitur\\test.php', 244)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:30:14 --> Attempt to read property "nilai" on array
+in APPPATH\Views\fitur\test.php on line 258.
+ 1 APPPATH\Views\fitur\test.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nilai" on array', 'APPPATH\\Views\\fitur\\test.php', 258)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:30:56 --> Array to string conversion
+in APPPATH\Views\fitur\test.php on line 258.
+ 1 APPPATH\Views\fitur\test.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\fitur\\test.php', 258)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:31:04 --> Attempt to read property "nilai" on array
+in APPPATH\Views\fitur\test.php on line 258.
+ 1 APPPATH\Views\fitur\test.php(258): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nilai" on array', 'APPPATH\\Views\\fitur\\test.php', 258)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:31:34 --> Attempt to read property "dimensi" on array
+in APPPATH\Views\fitur\test.php on line 260.
+ 1 APPPATH\Views\fitur\test.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "dimensi" on array', 'APPPATH\\Views\\fitur\\test.php', 260)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:31:51 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 265.
+ 1 APPPATH\Views\fitur\test.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:32:04 --> Undefined array key "jumlah"
+in APPPATH\Views\fitur\test.php on line 266.
+ 1 APPPATH\Views\fitur\test.php(266): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "jumlah"', 'APPPATH\\Views\\fitur\\test.php', 266)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:34:32 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\test.php on line 259.
+ 1 APPPATH\Views\fitur\test.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(65): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 19:36:09 --> mysqli_sql_exception: Table 'p5bk.elemen_budaya_kerja' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 19:36:09 --> Table 'p5bk.elemen_budaya_kerja' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen_budaya_kerja` ON `elemen_budaya_kerja`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen_budaya_kerja` ON `elemen_budaya_kerja`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen_budaya_kerja` ON `elemen_budaya_kerja`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen_budaya_kerja` ON `elemen_budaya_kerja`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:', [...], false)
+ 5 APPPATH\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 19:37:08 --> mysqli_sql_exception: Table 'p5bk.opsi' doesn't exist in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 19:37:08 --> Table 'p5bk.opsi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `opsi` ON `opsi`.`opsi_id` = `nilai_p5bk`.`opsi_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:', [...], false)
+ 5 APPPATH\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 19:37:22 --> mysqli_sql_exception: Unknown column 'dimensi.dimensi_id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 19:37:22 --> Unknown column 'dimensi.dimensi_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:', [...], false)
+ 5 APPPATH\Controllers\Test.php(63): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 19:46:32 --> mysqli_sql_exception: Not unique table/alias: 'dimensi' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(67): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 19:46:32 --> Not unique table/alias: 'dimensi'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `sub_elemen`.`capaian`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `sub_elemen`.`capaian`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `sub_elemen`.`capaian`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.`dimensi_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`rencana_id`, `nilai_p5bk`.`elemen_id`, `nilai_p5bk`.`opsi_id`, `dimensi`.`nama_dimensi`, `elemen`.`nama_elemen`, `sub_elemen`.`capaian`
+FROM `nilai_p5bk`
+JOIN `dimensi` ON `dimensi`.`dimensi_id` = `nilai_p5bk`.`dimensi_id`
+JOIN `dimensi` ON `dimensi`.`id_dimensi` = `nilai_p5bk`.`dimensi_id`
+JOIN `rencana_budaya_kerja` ON `rencana_budaya_kerja`.`rencana_id` = `nilai_p5bk`.`rencana_id`
+JOIN `elemen` ON `elemen`.`id_elemen` = `nilai_p5bk`.`elemen_id`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `nilai_p5bk`.`elemen_id`
+WHERE `nilai_p5bk`.`siswa_id` = :nilai_p5bk.siswa_id:', [...], false)
+ 5 APPPATH\Controllers\Test.php(67): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:47:54 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 263.
+ 1 APPPATH\Views\fitur\test.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:48:17 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 263.
+ 1 APPPATH\Views\fitur\test.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:51:02 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 265.
+ 1 APPPATH\Views\fitur\test.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:52:35 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\test.php on line 276.
+ 1 APPPATH\Views\fitur\test.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:57:41 --> syntax error, unexpected token "endif"
+in APPPATH\Views\fitur\test.php on line 289.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:57:55 --> syntax error, unexpected token "endforeach", expecting end of file
+in APPPATH\Views\fitur\test.php on line 322.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 19:58:09 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 264.
+ 1 APPPATH\Views\fitur\test.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 264)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:00:33 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 265.
+ 1 APPPATH\Views\fitur\test.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(83): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:02:56 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(90): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:05:59 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(96): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:07:04 --> Undefined array key "nama"
+in APPPATH\Controllers\Test.php on line 79.
+ 1 APPPATH\Controllers\Test.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'APPPATH\\Controllers\\Test.php', 79)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:08:22 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(103): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:08:53 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(103): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:09:49 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:10:43 --> syntax error, unexpected token ")"
+in APPPATH\Views\fitur\test.php on line 262.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(93): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:12:03 --> Undefined variable $nilai2
+in APPPATH\Controllers\Test.php on line 62.
+ 1 APPPATH\Controllers\Test.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nilai2', 'APPPATH\\Controllers\\Test.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:12:35 --> Undefined variable $nilai2
+in APPPATH\Controllers\Test.php on line 62.
+ 1 APPPATH\Controllers\Test.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nilai2', 'APPPATH\\Controllers\\Test.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 20:14:26 --> mysqli_sql_exception: Unknown column 'elemen.elemen_id' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 20:14:26 --> Unknown column 'elemen.elemen_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `elemen`.`elemen_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `elemen`.`elemen_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `elemen`.`elemen_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`elemen_id` = `elemen`.`elemen_id`', [], false)
+ 5 APPPATH\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 20:14:43 --> mysqli_sql_exception: Unknown column 'elemen.elemen_id' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 20:14:43 --> Unknown column 'elemen.elemen_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`elemen_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`elemen_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`elemen_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`.`elemen_id`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`elemen_id`', [], false)
+ 5 APPPATH\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-04 20:14:53 --> mysqli_sql_exception: Unknown column 'sub_elemen.id_elemen' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Test->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-04 20:14:53 --> Unknown column 'sub_elemen.id_elemen' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `elemen`.`id_elemen`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`id_elemen`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `elemen`.`id_elemen`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`id_elemen`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `elemen`.`id_elemen`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`id_elemen`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `elemen`.`id_elemen`, `elemen`.`nama_elemen`, `elemen`.`dimensi_id`, `sub_elemen`.`capaian`
+FROM `elemen`
+JOIN `sub_elemen` ON `sub_elemen`.`id_elemen` = `elemen`.`id_elemen`', [], false)
+ 5 APPPATH\Controllers\Test.php(48): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:19:29 --> Undefined array key "deskripsi_dimensi"
+in APPPATH\Controllers\Test.php on line 65.
+ 1 APPPATH\Controllers\Test.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "deskripsi_dimensi"', 'APPPATH\\Controllers\\Test.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 20:19:48 --> Undefined array key "dimensi_id"
+in APPPATH\Controllers\Test.php on line 68.
+ 1 APPPATH\Controllers\Test.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dimensi_id"', 'APPPATH\\Controllers\\Test.php', 68)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:53:15 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 265.
+ 1 APPPATH\Views\fitur\test.php(265): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 265)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:56:13 --> Undefined array key "rencana_id"
+in APPPATH\Views\fitur\test.php on line 259.
+ 1 APPPATH\Views\fitur\test.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rencana_id"', 'APPPATH\\Views\\fitur\\test.php', 259)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:57:12 --> Undefined array key "rencana_id"
+in APPPATH\Views\fitur\test.php on line 261.
+ 1 APPPATH\Views\fitur\test.php(261): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rencana_id"', 'APPPATH\\Views\\fitur\\test.php', 261)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:57:43 --> Undefined array key "rencana_id"
+in APPPATH\Views\fitur\test.php on line 260.
+ 1 APPPATH\Views\fitur\test.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rencana_id"', 'APPPATH\\Views\\fitur\\test.php', 260)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:58:13 --> Undefined array key "rencana_id"
+in APPPATH\Views\fitur\test.php on line 260.
+ 1 APPPATH\Views\fitur\test.php(260): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rencana_id"', 'APPPATH\\Views\\fitur\\test.php', 260)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:58:28 --> foreach() argument must be of type array|object, int given
+in APPPATH\Views\fitur\test.php on line 267.
+ 1 APPPATH\Views\fitur\test.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, int given', 'APPPATH\\Views\\fitur\\test.php', 267)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 21:59:11 --> syntax error, unexpected token "foreach"
+in APPPATH\Views\fitur\test.php on line 259.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(95): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:02:46 --> Undefined array key "nama_dimensi"
+in APPPATH\Views\fitur\test.php on line 263.
+ 1 APPPATH\Views\fitur\test.php(263): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_dimensi"', 'APPPATH\\Views\\fitur\\test.php', 263)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:04:02 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\fitur\test.php on line 288.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:04:14 --> Undefined array key "nama_aspek"
+in APPPATH\Views\fitur\test.php on line 264.
+ 1 APPPATH\Views\fitur\test.php(264): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_aspek"', 'APPPATH\\Views\\fitur\\test.php', 264)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:05:12 --> Undefined array key "aspek_id"
+in APPPATH\Views\fitur\test.php on line 269.
+ 1 APPPATH\Views\fitur\test.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "aspek_id"', 'APPPATH\\Views\\fitur\\test.php', 269)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:05:43 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 269.
+ 1 APPPATH\Views\fitur\test.php(269): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 269)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:07:19 --> Undefined array key "aspek_id"
+in APPPATH\Views\fitur\test.php on line 267.
+ 1 APPPATH\Views\fitur\test.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "aspek_id"', 'APPPATH\\Views\\fitur\\test.php', 267)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:08:03 --> Undefined variable $o
+in APPPATH\Views\fitur\test.php on line 270.
+ 1 APPPATH\Views\fitur\test.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $o', 'APPPATH\\Views\\fitur\\test.php', 270)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:10:33 --> Undefined variable $nilai2
+in APPPATH\Views\fitur\test.php on line 275.
+ 1 APPPATH\Views\fitur\test.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nilai2', 'APPPATH\\Views\\fitur\\test.php', 275)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:10:56 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 276.
+ 1 APPPATH\Views\fitur\test.php(276): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 276)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:12:03 --> syntax error, unexpected token "endforeach", expecting "elseif" or "else" or "endif"
+in APPPATH\Views\fitur\test.php on line 289.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 3 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:22:38 --> Undefined array key "id_opsi"
+in APPPATH\Views\fitur\test.php on line 277.
+ 1 APPPATH\Views\fitur\test.php(277): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_opsi"', 'APPPATH\\Views\\fitur\\test.php', 277)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(98): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-04 22:47:44 --> Array to string conversion
+in APPPATH\Views\fitur\test.php on line 290.
+ 1 APPPATH\Views\fitur\test.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\fitur\\test.php', 290)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\test.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/test', [], true)
+ 5 APPPATH\Controllers\Test.php(107): view('fitur/test', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Test->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Test))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
