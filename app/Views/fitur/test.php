@@ -211,8 +211,6 @@
     </table>
     <br> <br>
 
-
-
     <?php
     $no = 1;
     foreach ($rencana as $itm) : ?>
