@@ -4,15 +4,18 @@ namespace App\Controllers;
 
 use App\Models\SiswaModel;
 use App\Controllers\BaseController;
+use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+
 
 class Siswa extends BaseController
 {
-    public function __construct(){
+    public function __construct()
+    {
         $this->siswaModel = new SiswaModel();
     }
     public function index()
     {
-
 
         $data = [
             'title' => 'Data Siswa',
@@ -21,6 +24,4 @@ class Siswa extends BaseController
         ];
         return view('fitur/data_siswa', $data);
     }
-
-    
 }

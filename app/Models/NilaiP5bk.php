@@ -47,4 +47,14 @@ class NilaiP5bk extends Model
         $nilai = $nilai->get()->getResultArray();
         return $nilai;
     }
+
+    public function getAllNilai()
+    {
+        $db = \Config\Database::connect();
+        $nilai = $db->table('nilai_p5bk');
+        $nilai = $nilai->select('nilai_p5bk.*, tb_siswa.siswa_nama');
+        $nilai = $nilai->join('tb_siswa', 'tb_siswa.siswa_id = nilai_p5bk.siswa_id');
+        $nilai = $nilai->get()->getResultArray();
+        return $nilai;
+    }
 }

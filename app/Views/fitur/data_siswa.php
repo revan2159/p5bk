@@ -15,8 +15,8 @@
                     </div>
                     <div class="col-md-6">
                         <div class="float-end">
+                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importdata" type="button"><i class="fas fa-plus"></i> Import Data</button>
                             <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
-                            <!--<a href="<?= base_url('fitur/siswa/tambah') ?>" class="btn btn-primary btn-sm"><i class="fas fa-plus"></i> Tambah Data</a>-->
                         </div>
                     </div>
                 </div>
@@ -67,24 +67,55 @@
         </div>
 
     </div>
-    <div class="modal fade" id="verticalCenter" tabindex="-1" aria-labelledby="verticalCenterLabel" aria-hidden="true">
+    <div class="modal fade" id="verticalCenter" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="verticalCenterLabel">Tambah Data</h5>
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Tambah Data</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet
-                    consequatur
-                    sint libero esse assumenda provident placeat sed porro ad iusto.
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Attention!</h4>
+                        <p>Maaf Fitur ini belum tersedia.</p>
+                        <hr>
+                        <p class="mb-0">Silahkan gunakan Fitur Import Data.</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button class="btn btn-primary" data-bs-target="#importdata" data-bs-toggle="modal">Import Data</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="importdata" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Import Data</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="alert alert-warning" role="alert">
+                        <h4 class="alert-heading">Attention!</h4>
+                        <p>Saat ini fitur impor data siswa hanya bisa melalui file excel.</p>
+                        <hr>
+                        <p class="mb-0">Pastikan data yang akan diimpor sudah benar.</p>
+                    </div>
+                    <form action="<?= base_url('fitur/siswa/import') ?>" method="post" enctype="multipart/form-data">
+                        <?= csrf_field() ?>
+                        <div class="input-group">
+                            <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                            <button class="btn btn-outline-secondary" type="button" id="inputGroupFileAddon04">Import</button>
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#verticalCenter" data-bs-toggle="modal">Manual Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="btn btn-primary" data-bs-toggle="modal" href="#verticalCenter" role="button">Open first modal</a>
+</div>
 
-    <?= $this->endSection(); ?>
+<?= $this->endSection(); ?>

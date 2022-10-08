@@ -43,7 +43,9 @@
                                     <td><?= $row['nama']; ?></td>
                                     <td><?= $row['deskripsi'] ?></td>
                                     <td><?= $row['dimensi'] ?></td>
-                                    <td><a href="phpp"></a></td>
+                                    <td>
+                                        <a href="<?= base_url('') . $row['rencana_id'] ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                    </td>
                                 </tr>
                             <?php endforeach;
 
@@ -104,7 +106,7 @@
                                         <div class="form-group">
                                             <label for="kelas">Kelas</label>
                                             <select class="form-select" aria-label="Default select example" name="kelas_id[]" id="kelas">
-                                                <option selected>Pilih Kelas</option>
+                                                <option value="" selected>Pilih Kelas</option>
                                                 <?php foreach ($kelas as $row) : ?>
                                                     <option value="<?= $row['kelas_id']; ?>"><?= $row['kelas_nama']; ?></option>
                                                 <?php endforeach; ?>

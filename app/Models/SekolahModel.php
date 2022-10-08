@@ -32,42 +32,7 @@ class SekolahModel extends Model
     protected $updatedField  = 'sekolah_updated_at';
     //protected $deletedField  = 'deleted_at';
 
-    // Validation
-    protected $validationRules      = [
-        'sekolah_npsn' => 'required|is_unique[tb_sekolah.sekolah_npsn]',
-        'sekolah_nama' => 'required|is_unique[tb_sekolah.sekolah_nama]',
-        'sekolah_alamat' => 'required',
-        'sekolah_kodepos' => 'required',
-        'sekolah_telepon' => 'required',
-        'sekolah_email' => 'required|valid_email',
-        'sekolah_website' => 'required',
-    ];
-    protected $validationMessages   = [
-        'sekolah_npsn' => [
-            'required' => 'NPSN tidak boleh kosong',
-            'is_unique' => 'NPSN sudah terdaftar',
-        ],
-        'sekolah_nama' => [
-            'required' => 'Nama Sekolah tidak boleh kosong',
-            'is_unique' => 'Nama Sekolah sudah terdaftar',
-        ],
-        'sekolah_alamat' => [
-            'required' => 'Alamat tidak boleh kosong',
-        ],
-        'sekolah_kodepos' => [
-            'required' => 'Kode Pos tidak boleh kosong',
-        ],
-        'sekolah_telepon' => [
-            'required' => 'Telepon tidak boleh kosong',
-        ],
-        'sekolah_email' => [
-            'required' => 'Email tidak boleh kosong',
-            'valid_email' => 'Email tidak valid',
-        ],
-        'sekolah_website' => [
-            'required' => 'Website tidak boleh kosong',
-        ],
-    ];
+
     protected $skipValidation       = false;
     protected $cleanValidationRules = true;
 
@@ -81,4 +46,12 @@ class SekolahModel extends Model
     protected $afterFind      = [];
     protected $beforeDelete   = [];
     protected $afterDelete    = [];
+
+    public function getsekolah()
+    {
+        $sekolah = $this->db->table('tb_sekolah');
+        $sekolah = $sekolah->select('tb_sekolah.*');
+        $sekolah = $sekolah->get()->getRowArray();
+        return $sekolah;
+    }
 }

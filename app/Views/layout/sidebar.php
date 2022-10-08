@@ -26,13 +26,13 @@
                 <li class="<?php if ($active === 'data_sekolah') {
                                 echo 'active';
                             } else echo '' ?>"><a href="<?= url_to('data-sekolah') ?>" class="link"><span>Data Sekolah</span></a></li>
-                <li><a href="element-button.html" class="link"><span>Data Guru</span></a></li>
-                <li><a href="element-tabs-collapse.html" class="link"><span>Data Akademik</span></a></li>
+                <!-- <li><a href="element-button.html" class="link"><span>Data Guru</span></a></li> -->
+                <!-- <li><a href="element-tabs-collapse.html" class="link"><span>Data Akademik</span></a></li> -->
             <?php endif; ?>
             <li class="<?php if ($active === 'data_siswa') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('data-siswa') ?>" class="link"><span>Data Siswa</span></a></li>
-            <li><a href="element-card.html" class="link"><span>Data Kelas</span></a></li>
+            <li><a href="<?= url_to('data-kelas') ?>" class="link"><span>Data Kelas</span></a></li>
             <li class="<?php if ($active === 'data_p5bk') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('data-p5bk') ?>" class="link"><span>Data p5bk</span></a></li>
@@ -63,8 +63,8 @@
             <span>Rapor</span>
         </a>
         <ul class="sub-menu ">
-            <li><a href="form-element.html" class="link">
-                    <span>Cetak Rapor</span></a>
+            <li><a href="<?= url_to('laporan') ?>" class="link">
+                    <span>Laporan</span></a>
             </li>
         </ul>
     </li>

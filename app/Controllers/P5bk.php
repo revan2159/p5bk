@@ -62,19 +62,35 @@ class P5bk extends BaseController
         $index = 0; // Set index array awal dengan 0
         foreach ($rencana_nama as $data_rencana) { // Kita buat perulangan berdasarkan nis sampai data terakhir
             array_push($data, array(
+                'kelas_id' => $kelas_id[$index], // Ambil dan set data telepon sesuai index array dari $index
                 'nama' => $data_rencana,
                 'deskripsi' => $deskripsi[$index], // Ambil dan set data nama sesuai index array dari $index
-                'kelas_id' => $kelas_id[$index], // Ambil dan set data telepon sesuai index array dari $index
             ));
-
             $index++;
         }
-        $isert = $this->db->table('rencana_budaya_kerja')->insertBatch($data);
+        //if data array 'kelas_id', 'nama', 'deskripsi' is empty unsert data
+        $filter = array_filter($data, function ($value) {
+            return $value['kelas_id'] != '' && $value['nama'] != '' && $value['deskripsi'] != '';
+        });
+
+
+        // $filter = array_filter($data);
+        $isert = $this->db->table('rencana_budaya_kerja')->insertBatch($filter);
 
         if ($isert) {
-            echo "<script>alert('Data berhasil ditambahkan');window.location.href='admin/perencanaan';</script>";
+            echo "<script>alert('Data berhasil ditambahkan');window.location.href='perencanaan';</script>";
         } else {
-            echo "<script>alert('Data gagal ditambahkan');window.location.href='admin/perencanaan';</script>";
+            echo "<script>alert('Data gagal ditambahkan');window.location.href='perencanaan';</script>";
+        }
+    }
+
+    public function hapus_rencana($id)
+    {
+        $hapus = $this->db->table('rencana_budaya_kerja')->delete(['rencana_id' => $id]);
+        if ($hapus) {
+            echo "<script>alert('Data berhasil dihapus');window.location.href='perencanaan';</script>";
+        } else {
+            echo "<script>alert('Data gagal dihapus');window.location.href='perencanaan';</script>";
         }
     }
 
