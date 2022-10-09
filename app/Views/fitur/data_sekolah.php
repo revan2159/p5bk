@@ -61,7 +61,7 @@
                         <div class="col-md-6">
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label">Alamat Sekolah</label>
-                                <textarea class="form-control" name="alamat" placeholder="<?= $sekolah['sekolah_alamat'] ?>" id="exampleFormControlTextarea1" rows="3"><?= $sekolah['sekolah_alamat'] ?>"</textarea>
+                                <textarea class="form-control" name="alamat" placeholder="<?= $sekolah['sekolah_alamat'] ?>" id="exampleFormControlTextarea1" rows="3"><?= $sekolah['sekolah_alamat'] ?></textarea>
                             </div>
                         </div>
                         <div class="col-md-6">

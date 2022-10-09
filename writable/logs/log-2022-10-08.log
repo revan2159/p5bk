@@ -1,0 +1,210 @@
+ERROR - 2022-10-08 10:59:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '123456', 'p5bk', 3306, '', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-10-08 10:59:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-08 11:01:11 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: YES) in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '123456', 'p5bk', 3306, '', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#8 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#11 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: YES) in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\laragon\www\p5bk\system\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\laragon\www\p5bk\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#5 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+#6 E:\laragon\www\p5bk\vendor\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate(Array, true)
+#7 E:\laragon\www\p5bk\vendor\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt(Array, false)
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+#9 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+#10 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2022-10-08 11:01:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(588): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+AND `users`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(250): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(622): CodeIgniter\Model->doFirst()
+ 5 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(140): CodeIgniter\BaseModel->first()
+ 6 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(19): Myth\Auth\Authentication\LocalAuthenticator->validate([...], true)
+ 7 VENDORPATH\myth\auth\src\Controllers\AuthController.php(87): Myth\Auth\Authentication\LocalAuthenticator->attempt([...], false)
+ 8 SYSTEMPATH\CodeIgniter.php(907): Myth\Auth\Controllers\AuthController->attemptLogin()
+ 9 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(Myth\Auth\Controllers\AuthController))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:01:58 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 APPPATH\Controllers\Admin.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Admin.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:02:07 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 APPPATH\Controllers\Admin.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Admin.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:02:28 --> Undefined array key "sekolah_nama"
+in APPPATH\Views\fitur\dashboard.php on line 20.
+ 1 APPPATH\Views\fitur\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "sekolah_nama"', 'APPPATH\\Views\\fitur\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(35): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:04:01 --> Trying to access array offset on value of type null
+in APPPATH\Views\fitur\dashboard.php on line 20.
+ 1 APPPATH\Views\fitur\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\fitur\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(38): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:38:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\fitur\dashboard.php on line 20.
+ 1 APPPATH\Views\fitur\dashboard.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\fitur\\dashboard.php', 20)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+ 5 APPPATH\Controllers\Admin.php(38): view('fitur/dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:38:59 --> Undefined array key 0
+in APPPATH\Controllers\Admin.php on line 55.
+ 1 APPPATH\Controllers\Admin.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Admin.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:39:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\fitur\data_sekolah.php on line 28.
+ 1 APPPATH\Views\fitur\data_sekolah.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Views\\fitur\\data_sekolah.php', 28)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\data_sekolah.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_sekolah', [], true)
+ 5 APPPATH\Controllers\Admin.php(60): view('fitur/data_sekolah', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:51:09 --> Undefined property: App\Controllers\DataSekolah::$session
+in APPPATH\Controllers\DataSekolah.php on line 55.
+ 1 APPPATH\Controllers\DataSekolah.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DataSekolah::$session', 'APPPATH\\Controllers\\DataSekolah.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\DataSekolah->ubah_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSekolah))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:52:13 --> Undefined property: App\Controllers\DataSekolah::$session
+in APPPATH\Controllers\DataSekolah.php on line 55.
+ 1 APPPATH\Controllers\DataSekolah.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DataSekolah::$session', 'APPPATH\\Controllers\\DataSekolah.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\DataSekolah->ubah_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSekolah))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 11:52:37 --> Undefined property: App\Controllers\DataSekolah::$session
+in APPPATH\Controllers\DataSekolah.php on line 56.
+ 1 APPPATH\Controllers\DataSekolah.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DataSekolah::$session', 'APPPATH\\Controllers\\DataSekolah.php', 56)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\DataSekolah->ubah_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DataSekolah))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-08 12:12:25 --> Undefined property: App\Controllers\Admin::$session
+in APPPATH\Controllers\Admin.php on line 53.
+ 1 APPPATH\Controllers\Admin.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$session', 'APPPATH\\Controllers\\Admin.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Admin->data_sekolah()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

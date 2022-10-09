@@ -41,13 +41,13 @@ class TahunAjaranModel extends Model
     protected $afterDelete    = [];
 
 
-    public function semester()
-    {
-        //one to many relationship semester_id and tahun_ajaran_id
-        $builder = $this->db->table('tb_semester');
-        $builder->select('tb_semester.semester_id, tb_semester.nama, tb_semester.tahun_ajaran_id, tb_tahun_ajaran.nama');
-        $builder->join('tb_tahun_ajaran', 'tb_semester.tahun_ajaran_id = tb_tahun_ajaran.tahun_ajaran_id');
-        $query = $builder->get();
-        return $query->getResultArray();
-    }
+    // public function semester()
+    // {
+    //     //one to many relationship semester_id and tahun_ajaran_id
+    //     $builder = $this->db->table('tb_semester');
+    //     $builder->select('tb_semester.semester_id, tb_semester.nama, tb_semester.tahun_ajaran_id, tb_tahun_ajaran.nama');
+    //     $builder->join('tb_tahun_ajaran', 'tb_semester.tahun_ajaran_id = tb_tahun_ajaran.tahun_ajaran_id');
+    //     $query = $builder->get();
+    //     return $query->getResultArray();
+    // }
 }

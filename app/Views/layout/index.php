@@ -17,6 +17,7 @@
     <!-- CSS for this page only -->
     <link href="<?= base_url(); ?>/vendor/datatables.net-dt/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href="<?= base_url(); ?>/vendor/datatables.net-responsive-dt/css/responsive.dataTables.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="<?= base_url(); ?>/vendor/izitoast/dist/css/iziToast.min.css">
     <!-- End CSS  -->
 
     <link rel="stylesheet" href="<?= base_url(); ?>/assets/css/style.min.css">
@@ -110,6 +111,8 @@
             </div>
         </div>
 
+
+
         <footer>
             Copyright © <?= date('Y') ?>
             &nbsp <a href="https://smkkes-rahanihusada-klt.sch.id/" target="_blank" class="ml-1"> KESRADA </a> <span> . All rights Reserved</span>
@@ -126,12 +129,15 @@
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 <script src="<?= base_url(); ?>/assets/js/page/index.js"></script>
 <!-- js for this page only -->
+<script src="<?= base_url(); ?>/vendor/izitoast/dist/js/iziToast.min.js"></script>
+<script src="<?= base_url(); ?>/vendor/sweetalert2/dist/sweetalert2.all.min.js"></script>
 
 <script src="<?= base_url(); ?>/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
 <script src="<?= base_url(); ?>/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
 <script src="<?= base_url(); ?>/assets/js/page/datatables.js"></script>
 <!-- ======= -->
 <script src="<?= base_url(); ?>/assets/js/main.js"></script>
+<?= $this->include('layout/notifikasi') ?>
 <script>
     Main.init()
 </script>

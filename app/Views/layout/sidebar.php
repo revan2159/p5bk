@@ -13,7 +13,7 @@
         </a>
     </li>
 
-    <li class="<?php if (!empty($active) && $active === 'data_sekolah' || $active === 'data_siswa' || $active === 'data_guru' || $active === 'data_akademik') {
+    <li class="<?php if (!empty($active) && $active === 'data_sekolah' || $active === 'data_siswa' || $active === 'data_guru' || $active === 'data_p5bk' || $active === 'data_kelas' || $active === 'data_mapel' || $active === 'data_jurusan' || $active === 'data_tahun_ajaran' || $active === 'data_semester' || $active === 'data_jadwal' || $active === 'data_absensi' || $active === 'data_nilai' || $active === 'data_pengumuman' || $active === 'data_pengguna' || $active === 'data_akun' || $active === 'data_akun_guru' || $active === 'data_akun_siswa' || $active === 'data_akun_p5bk') {
                     echo 'active';
                 } else echo '' ?>
     ">
@@ -32,14 +32,16 @@
             <li class="<?php if ($active === 'data_siswa') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('data-siswa') ?>" class="link"><span>Data Siswa</span></a></li>
-            <li><a href="<?= url_to('data-kelas') ?>" class="link"><span>Data Kelas</span></a></li>
+            <li class="<?php if ($active === 'data_kelas') {
+                            echo 'active';
+                        } else echo '' ?>"><a href="<?= url_to('data-kelas') ?>" class="link"><span>Data Kelas</span></a></li>
             <li class="<?php if ($active === 'data_p5bk') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('data-p5bk') ?>" class="link"><span>Data p5bk</span></a></li>
         </ul>
     </li>
 
-    <li class="<?php if (!empty($active) && $active === 'perencanaan' || $active === 'input_nilai' || $active === 'error_500') {
+    <li class="<?php if (!empty($active) && $active === 'perencanaan' || $active === 'penilaian') {
                     echo 'active';
                 } else echo '' ?>">
         <a href="#" class="main-menu has-dropdown">
@@ -47,23 +49,29 @@
             <span>Penilaian P5Bk</span>
         </a>
         <ul class="sub-menu">
-            <li class="<?php if ($active === 'data_sekolah') {
+            <li class="<?php if ($active === 'perencanaan') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?php if (in_groups('admin')) {
                                                         echo url_to('admin-perencanaan');
                                                     } else {
                                                         echo url_to('guru-perencanaan');
                                                     } ?>" class="link"><span>Perencanaan</span></a></li>
-            <li><a href="<?= url_to('penilaian'); ?>" class="link"><span>Input Nilai</span></a></li>
+            <li class="<?php if ($active === 'penilaian') {
+                            echo 'active';
+                        } else echo '' ?>"><a href="<?= url_to('penilaian'); ?>" class="link"><span>Input Nilai</span></a></li>
         </ul>
     </li>
-    <li>
+    <li class="<?php if (!empty($active) && $active === 'laporan') {
+                    echo 'active';
+                } else echo '' ?>">
         <a href="#" class="main-menu has-dropdown">
             <i class="ti-book"></i>
             <span>Rapor</span>
         </a>
         <ul class="sub-menu ">
-            <li><a href="<?= url_to('laporan') ?>" class="link">
+            <li class="<?php if ($active === 'laporan') {
+                            echo 'active';
+                        } else echo '' ?>"><a href="<?= url_to('laporan') ?>" class="link">
                     <span>Laporan</span></a>
             </li>
         </ul>

@@ -9,6 +9,7 @@ use App\Models\TahunAjaranModel;
 
 class DataSekolah extends BaseController
 {
+    // protected $seassion;
     protected $sekolah;
     protected $tahun_ajaran;
     public function __construct()
@@ -26,15 +27,10 @@ class DataSekolah extends BaseController
 
     public function tahun_ajaran()
     {
-        $this->session = Services::session();
-
-        $data = $this->tahun_ajaran->semester();
-       if ($data !== null) {
-            $this->session->setFlashdata('error', 'Data Tahun Ajaran Kosong');
-        } else {
-            $this->session->set('tahun_ajaran', $data[0]['nama']);
-            return $data;
-        }
+        $data = $this->tahun_ajaran->select('tahun_ajaran_id, nama')->findAll();
+        $session = Services::session();
+        $session->set('tahun_ajaran', $data);
+        return $data;
     }
 
     public function ubah_sekolah()
@@ -49,11 +45,12 @@ class DataSekolah extends BaseController
             'sekolah_website' => $this->request->getVar('website'),
             'sekolah_logo' => $this->request->getVar('logo'),
         ];
-        if ($this->sekolah->update(1, $data)=== false){
-            $errors = $this->sekolah->errors();
-           // return redirect()->to('/data-sekolah');
-            return redirect()->to('/admin/data-sekolah');
+        if ($this->sekolah->update(1, $data) === false) {
+            session()->setFlashdata('error', 'Data Sekolah Gagal Diubah');
+            return redirect()->to(url_to('data-sekolah'));
+        } else {
+            session()->setFlashdata('pesan', 'Data Sekolah Berhasil Diubah');
+            return redirect()->to(url_to('data-sekolah'));
         }
-        
     }
 }

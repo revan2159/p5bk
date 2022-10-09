@@ -53,7 +53,6 @@ class P5bk extends BaseController
 
     public function tambah_rencana()
     {
-
         $rencana_nama = $this->request->getVar('rencana_nama');
         $deskripsi = $this->request->getVar('deskripsi');
         $kelas_id = $this->request->getVar('kelas_id');
@@ -76,11 +75,12 @@ class P5bk extends BaseController
 
         // $filter = array_filter($data);
         $isert = $this->db->table('rencana_budaya_kerja')->insertBatch($filter);
-
         if ($isert) {
-            echo "<script>alert('Data berhasil ditambahkan');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
+            return redirect()->to(url_to('admin-perencanaan'));
         } else {
-            echo "<script>alert('Data gagal ditambahkan');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('error', 'Data gagal ditambahkan');
+            return redirect()->to('/p5bk');
         }
     }
 
@@ -88,9 +88,11 @@ class P5bk extends BaseController
     {
         $hapus = $this->db->table('rencana_budaya_kerja')->delete(['rencana_id' => $id]);
         if ($hapus) {
-            echo "<script>alert('Data berhasil dihapus');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('pesan', 'Data berhasil dihapus');
+            return redirect()->to(url_to('admin-perencanaan'));
         } else {
-            echo "<script>alert('Data gagal dihapus');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('error', 'Data gagal dihapus');
+            return redirect()->to(url_to('admin-perencanaan'));
         }
     }
 
@@ -110,7 +112,7 @@ class P5bk extends BaseController
 
         $data = [
             'title' => 'Data Capaian',
-            'active' => 'capaian',
+            'active' => 'data_p5bk',
             'p5bk' => $query,
             'dimensi' => $dimensi,
         ];
@@ -126,21 +128,6 @@ class P5bk extends BaseController
         $index = 0;
         $data = array();
 
-
-        // if (is_array($dimensi_id) || is_object($dimensi_id)) {
-        //     if (is_array($project_id) || is_object($project_id)) {
-        //         //loop 1 dimensi
-        //         foreach ($dimensi_id as $dim) {
-        //             //loop 2 project
-        //             foreach ($project_id as $pro) {
-        //                 $data[$index]['project_id'] = $pro;
-        //                 $data[$index]['dimensi_id'] = $dim;
-        //                 $index++;
-        //             }
-        //         }
-        //     }
-        // }
-
         for ($i = 0; $i < count($project_id); $i++) {
             for ($j = 0; $j < count($dimensi_id); $j++) {
                 $data[$index]['rencana_id'] = $project_id[$i];
@@ -153,10 +140,11 @@ class P5bk extends BaseController
         $builder = $db->table('aspek_penilaian');
         $builder->insertBatch($data);
         if ($builder) {
-            //auto redirect
-            echo "<script>alert('Data berhasil ditambahkan');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
+            return redirect()->to(url_to('admin-perencanaan'));
         } else {
-            echo "<script>alert('Data gagal ditambahkan');window.location.href='perencanaan';</script>";
+            session()->setFlashdata('error', 'Data gagal ditambahkan');
+            return redirect()->to(url_to('admin-perencanaan'));
         }
     }
 }
