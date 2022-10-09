@@ -67,6 +67,7 @@ $routes->post('tambah-aspek', 'P5bk::simpan_aspek', ['as' => 'simpan-aspek', 'fi
 $routes->get('penilaian', 'Penilaian::index', ['as' => 'penilaian', 'filter' => 'role:guru,admin']);
 $routes->post('save', 'Penilaian::save', ['as' => 'input-nilai', 'filter' => 'role:guru,admin']);
 $routes->get('laporan', 'Laporan::index', ['as' => 'laporan', 'filter' => 'role:guru,admin']);
+$routes->get('laporan/preview/(:num)', 'Laporan::preview_nilai/$1', ['filter' => 'role:guru,admin']);
 $routes->get('laporan/cetak/(:num)', 'Laporan::cetak/$1', ['filter' => 'role:guru,admin']);
 $routes->post('catatan/update', 'Laporan::update_catatan', ['as' => 'update-catatan', 'filter' => 'role:guru,admin']);
 $routes->post('catatan/tambah', 'Laporan::tambah_catatan', ['as' => 'tambah-catatan', 'filter' => 'role:guru,admin']);

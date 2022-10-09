@@ -43,7 +43,7 @@
                                     ?>
                                 </td>
                                 <td>
-                                    <a href="<?= base_url('nilai/lihat_nilai/' . $nilai['siswa_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-search"></i></a>
+                                    <a href="<?= base_url('laporan/preview/' . $nilai['siswa_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-search"></i></a>
                                 </td>
                                 <td>
                                     <div class="btn-group">
