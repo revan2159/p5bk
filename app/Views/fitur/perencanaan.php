@@ -44,7 +44,33 @@
                                     <td><?= $row['deskripsi'] ?></td>
                                     <td><?= $row['dimensi'] ?></td>
                                     <td>
-                                        <a href="<?= base_url('') . $row['rencana_id'] ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
+                                        <!-- <a href="<?= base_url('') . $row['rencana_id'] ?>" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a> -->
+                                        <button class="btn btn-sm btn-danger" id="swall-confirmation_<?= $row['rencana_id'] ?>" type="button"><i class="fas fa-trash"></i></button>
+                                        <script>
+                                            const confirmation = document.getElementById('swall-confirmation_<?= $row['rencana_id'] ?>')
+                                            confirmation.addEventListener('click', function() {
+                                                Swal.fire({
+                                                    title: 'Apakah anda yakin?',
+                                                    text: "Ini akan menghapus data nilai siswa yang sudah diinputkan!",
+                                                    icon: 'warning',
+                                                    showCancelButton: true,
+                                                    confirmButtonColor: '#3085d6',
+                                                    cancelButtonColor: '#d33',
+                                                    confirmButtonText: 'Ya, hapus data!'
+                                                }).then((result) => {
+                                                    if (result.isConfirmed) {
+                                                        //delete data
+                                                        window.location.href = "<?= base_url('admin/perencanaan/' . $row['rencana_id'])  ?>";
+                                                        Swal.fire(
+                                                            'Berhasil!',
+                                                            'Data berhasil dihapus.',
+                                                            'success'
+                                                        )
+                                                    }
+                                                })
+                                            })
+                                        </script>
+
                                     </td>
                                 </tr>
                             <?php endforeach;
@@ -123,7 +149,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
                 </div>
@@ -145,7 +171,7 @@
                                 <h4 class="text-center">Pilih Judul Project</h4>
                                 <div class="d-flex justify-content-center">
                                     <select class="form-select" aria-label="Default select example" name="project_id[]" style="width: 300px;">
-                                        <option selected>Pilih Project</option>
+                                        <option value="0" selected>Pilih Project</option>
                                         <?php
                                         foreach ($project as $p) : ?>
                                             <option value="<?= $p['rencana_id']; ?>"><?= $p['nama']; ?></option>
@@ -169,7 +195,7 @@
                             </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Simpan</button>
                         </form>
                     </div>
                 </div>

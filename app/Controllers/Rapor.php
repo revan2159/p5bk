@@ -11,12 +11,8 @@ class Rapor extends BaseController
     {
         $db = Database::connect();
         $siswa_id = 1;
-
         //get data project 
         $k1 = $db->table('rencana_budaya_kerja');
-        
-        
-
 
         return view('fitur/cetak');
     }

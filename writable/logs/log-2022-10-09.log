@@ -88,3 +88,863 @@ GROUP BY `tb_kelas`.`kelas_id`', [], false)
 10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
 11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 12 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 08:58:32 --> Undefined array key 0
+in SYSTEMPATH\Router\RouteCollection.php on line 1135.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'SYSTEMPATH\\Router\\RouteCollection.php', 1135)
+ 2 SYSTEMPATH\Router\RouteCollection.php(1002): CodeIgniter\Router\RouteCollection->fillRouteParams('admin/perencanaan/([0-9]+)', [])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('hapus-perencanaan')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('hapus-perencanaan')
+ 5 APPPATH\Views\fitur\perencanaan.php(63): url_to('hapus-perencanaan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 9 APPPATH\Controllers\P5bk.php(48): view('fitur/perencanaan', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 08:58:49 --> Undefined array key 0
+in SYSTEMPATH\Router\RouteCollection.php on line 1135.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'SYSTEMPATH\\Router\\RouteCollection.php', 1135)
+ 2 SYSTEMPATH\Router\RouteCollection.php(1002): CodeIgniter\Router\RouteCollection->fillRouteParams('admin/perencanaan/([0-9]+)', [])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('hapus-perencanaan')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('hapus-perencanaan')
+ 5 APPPATH\Views\fitur\perencanaan.php(63): url_to('hapus-perencanaan')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\perencanaan.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/perencanaan', [], true)
+ 9 APPPATH\Controllers\P5bk.php(48): view('fitur/perencanaan', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->index()
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:03:19 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\P5bk.php on line 130.
+ 1 APPPATH\Controllers\P5bk.php(130): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:10:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\P5bk.php on line 136.
+ 1 APPPATH\Controllers\P5bk.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\P5bk.php', 136)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:16:41 --> array_filter(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\P5bk.php on line 129.
+ 1 APPPATH\Controllers\P5bk.php(129): array_filter(null, Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:16:50 --> array_filter(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\P5bk.php on line 129.
+ 1 APPPATH\Controllers\P5bk.php(129): array_filter(null, Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:18:21 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Controllers\P5bk.php on line 133.
+ 1 APPPATH\Controllers\P5bk.php(133): count(null)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:19:59 --> array_filter(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\P5bk.php on line 130.
+ 1 APPPATH\Controllers\P5bk.php(130): array_filter(null, Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:20:24 --> array_filter(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\P5bk.php on line 130.
+ 1 APPPATH\Controllers\P5bk.php(130): array_filter(null, Object(Closure))
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->simpan_aspek()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 09:26:56 --> mysqli_sql_exception: Unknown column 'tb_siswa.siswa_telp' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_sisw...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_sisw...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_sisw...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_sisw...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Siswa.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Siswa->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-09 09:26:56 --> Unknown column 'tb_siswa.siswa_telp' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_telp`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_telp`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_telp`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_telp`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`', [], false)
+ 5 APPPATH\Controllers\Siswa.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 09:27:46 --> mysqli_sql_exception: Unknown column 'tb_siswa.siswa_password' in 'field list' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_sisw...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_sisw...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_sisw...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_sisw...', Array, false)
+#4 E:\laragon\www\p5bk\app\Controllers\Siswa.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Siswa->index()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2022-10-09 09:27:46 --> Unknown column 'tb_siswa.siswa_password' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_agama`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_agama`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_agama`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `tb_siswa`.`siswa_id`, `tb_siswa`.`siswa_nama`, `tb_siswa`.`siswa_nis`, `tb_siswa`.`siswa_jk`, `tb_siswa`.`siswa_alamat`, `tb_siswa`.`siswa_agama`, `tb_siswa`.`siswa_email`, `tb_siswa`.`siswa_kelas`, `tb_siswa`.`siswa_foto`, `tb_siswa`.`siswa_password`, `tb_siswa`.`siswa_status`, `tb_siswa`.`siswa_created_at`, `tb_siswa`.`siswa_updated_at`, `tb_kelas`.`kelas_id`, `tb_kelas`.`kelas_nama`
+FROM `tb_siswa`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`siswa_kelas`', [], false)
+ 5 APPPATH\Controllers\Siswa.php(26): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:29:00 --> Undefined array key "siswa_status"
+in APPPATH\Views\fitur\data_siswa.php on line 46.
+ 1 APPPATH\Views\fitur\data_siswa.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_status"', 'APPPATH\\Views\\fitur\\data_siswa.php', 46)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\data_siswa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/data_siswa', [], true)
+ 5 APPPATH\Controllers\Siswa.php(36): view('fitur/data_siswa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Siswa->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:33:04 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-siswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:33:10 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/laporan', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:33:37 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-siswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:33:43 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-kelas', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:33:47 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-p5bk', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:34:01 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/penilaian', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 09:34:05 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/laporan', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 10:22:55 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-siswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:37:36 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('guru/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:37:39 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('guru/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:44:16 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:45:00 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:46:01 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:46:33 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:46:39 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:47:22 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:48:28 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:52:21 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:53:11 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:53:15 --> ini_set(): Session ini settings cannot be changed after headers have already been sent
+in SYSTEMPATH\Session\Handlers\FileHandler.php on line 71.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'SYSTEMPATH\\Session\\Handlers\\FileHandler.php', 71)
+ 2 SYSTEMPATH\Session\Handlers\FileHandler.php(71): ini_set('session.save_path', 'ROOTPATH\\writable\\session')
+ 3 SYSTEMPATH\Config\Services.php(658): CodeIgniter\Session\Handlers\FileHandler->__construct(Object(Config\App), '::1')
+ 4 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session(Object(Config\App), false)
+ 5 SYSTEMPATH\Config\BaseService.php(194): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 6 SYSTEMPATH\Config\Services.php(637): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 7 SYSTEMPATH\Config\BaseService.php(253): CodeIgniter\Config\Services::session()
+ 8 SYSTEMPATH\Common.php(939): CodeIgniter\Config\BaseService::__callStatic('session', [])
+ 9 VENDORPATH\myth\auth\src\Authentication\AuthenticationBase.php(128): session('logged_in')
+10 VENDORPATH\myth\auth\src\Authentication\LocalAuthenticator.php(67): Myth\Auth\Authentication\AuthenticationBase->isLoggedIn()
+11 VENDORPATH\myth\auth\src\Filters\RoleFilter.php(21): Myth\Auth\Authentication\LocalAuthenticator->check()
+12 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+13 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/save', 'before')
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:58:31 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-siswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 13:59:58 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/data-siswa', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:05:55 --> The route for "guru-perencanaan" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('guru-perencanaan')
+ 2 APPPATH\Views\layout\sidebar.php(57): url_to('guru-perencanaan')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\index.php(54): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+11 APPPATH\Controllers\Guru.php(17): view('fitur/dashboard', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Guru->index()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:06:47 --> The route for "guru-perencanaan" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('guru-perencanaan')
+ 2 APPPATH\Views\layout\sidebar.php(57): url_to('guru-perencanaan')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\sidebar.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\View\View.php(429): CodeIgniter\View\View->render('layout/sidebar', null, true)
+ 6 APPPATH\Views\layout\index.php(54): CodeIgniter\View\View->include('layout/sidebar')
+ 7 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\index.php')
+ 8 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 9 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->render('layout/index', [], true)
+10 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/dashboard', [], true)
+11 APPPATH\Controllers\Guru.php(17): view('fitur/dashboard', [...])
+12 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Guru->index()
+13 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:08:38 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:08:51 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('admin/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:15:46 --> Request URI segment is out of range: 2
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Controllers\P5bk.php(100): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:16:20 --> Request URI segment is out of range: 2
+in SYSTEMPATH\HTTP\URI.php on line 529.
+ 1 SYSTEMPATH\HTTP\URI.php(529): CodeIgniter\HTTP\Exceptions\HTTPException::forURISegmentOutOfRange(2)
+ 2 APPPATH\Controllers\P5bk.php(100): CodeIgniter\HTTP\URI->getSegment(2)
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:32 --> The route for "capaian/" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('capaian/')
+ 2 APPPATH\Views\fitur\capaian.php(20): url_to('capaian/')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 6 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:33 --> The route for "capaian/" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('capaian/')
+ 2 APPPATH\Views\fitur\capaian.php(20): url_to('capaian/')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 6 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:38 --> Undefined array key 0
+in SYSTEMPATH\Router\RouteCollection.php on line 1135.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'SYSTEMPATH\\Router\\RouteCollection.php', 1135)
+ 2 SYSTEMPATH\Router\RouteCollection.php(1002): CodeIgniter\Router\RouteCollection->fillRouteParams('capaian/([0-9]+)', [])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('capaian')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('capaian')
+ 5 APPPATH\Views\fitur\capaian.php(20): url_to('capaian')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 9 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:48 --> Undefined array key 0
+in SYSTEMPATH\Router\RouteCollection.php on line 1135.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'SYSTEMPATH\\Router\\RouteCollection.php', 1135)
+ 2 SYSTEMPATH\Router\RouteCollection.php(1002): CodeIgniter\Router\RouteCollection->fillRouteParams('capaian/([0-9]+)', [])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('capaian')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('capaian')
+ 5 APPPATH\Views\fitur\capaian.php(20): url_to('capaian')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 9 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:18:49 --> Undefined array key 0
+in SYSTEMPATH\Router\RouteCollection.php on line 1135.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'SYSTEMPATH\\Router\\RouteCollection.php', 1135)
+ 2 SYSTEMPATH\Router\RouteCollection.php(1002): CodeIgniter\Router\RouteCollection->fillRouteParams('capaian/([0-9]+)', [])
+ 3 SYSTEMPATH\Common.php(920): CodeIgniter\Router\RouteCollection->reverseRoute('capaian')
+ 4 SYSTEMPATH\Helpers\url_helper.php(535): route_to('capaian')
+ 5 APPPATH\Views\fitur\capaian.php(20): url_to('capaian')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 9 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+10 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+11 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+12 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:19:08 --> The route for "capaian1" cannot be found.
+in SYSTEMPATH\Helpers\url_helper.php on line 542.
+ 1 SYSTEMPATH\Helpers\url_helper.php(542): CodeIgniter\Router\Exceptions\RouterException::forInvalidRoute('capaian1')
+ 2 APPPATH\Views\fitur\capaian.php(20): url_to('capaian1')
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\capaian.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/capaian', [], true)
+ 6 APPPATH\Controllers\P5bk.php(117): view('fitur/capaian', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\P5bk->capaian('3')
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\P5bk))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:33:14 --> Undefined variable $allnilai
+in APPPATH\Views\fitur\laporan.php on line 27.
+ 1 APPPATH\Views\fitur\laporan.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allnilai', 'APPPATH\\Views\\fitur\\laporan.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(28): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:35:29 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\NilaiP5bk.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Laporan->index()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-10-09 14:35:29 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', [], false)
+ 5 APPPATH\Models\NilaiP5bk.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:36:12 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Laporan->index()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-10-09 14:36:12 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', [], false)
+ 5 APPPATH\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:36:24 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Laporan->index()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-10-09 14:36:24 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', [], false)
+ 5 APPPATH\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:36:52 --> Undefined array key "siswa_nama"
+in APPPATH\Views\fitur\laporan.php on line 29.
+ 1 APPPATH\Views\fitur\laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_nama"', 'APPPATH\\Views\\fitur\\laporan.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(29): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:36:58 --> Undefined array key "siswa_nama"
+in APPPATH\Views\fitur\laporan.php on line 29.
+ 1 APPPATH\Views\fitur\laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_nama"', 'APPPATH\\Views\\fitur\\laporan.php', 29)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(29): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:37:08 --> mysqli_sql_exception: Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Laporan->index()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-10-09 14:37:08 --> Expression #1 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'p5bk.nilai_p5bk.nilai_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_p5bk`.*, `tb_siswa`.`siswa_nama`
+FROM `nilai_p5bk`
+JOIN `tb_siswa` ON `tb_siswa`.`siswa_id` = `nilai_p5bk`.`siswa_id`
+GROUP BY `nilai_p5bk`.`siswa_id`', [], false)
+ 5 APPPATH\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(17): App\Models\NilaiP5bk->getAllNilai()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:38:39 --> Undefined variable $getnilai
+in APPPATH\Controllers\Laporan.php on line 27.
+ 1 APPPATH\Controllers\Laporan.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $getnilai', 'APPPATH\\Controllers\\Laporan.php', 27)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:39:00 --> Undefined variable $allnilai
+in APPPATH\Views\fitur\laporan.php on line 27.
+ 1 APPPATH\Views\fitur\laporan.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $allnilai', 'APPPATH\\Views\\fitur\\laporan.php', 27)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(29): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:39:22 --> Undefined array key "nilai_id"
+in APPPATH\Views\fitur\laporan.php on line 53.
+ 1 APPPATH\Views\fitur\laporan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai_id"', 'APPPATH\\Views\\fitur\\laporan.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(29): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-09 14:39:24 --> Undefined array key "nilai_id"
+in APPPATH\Views\fitur\laporan.php on line 53.
+ 1 APPPATH\Views\fitur\laporan.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nilai_id"', 'APPPATH\\Views\\fitur\\laporan.php', 53)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\laporan.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/laporan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(29): view('fitur/laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+ERROR - 2022-10-09 14:46:17 --> mysqli_sql_exception: Unknown column 'tb_siswa.kelas_id' in 'on clause' in E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 E:\laragon\www\p5bk\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\laragon\www\p5bk\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\laragon\www\p5bk\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\laragon\www\p5bk\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\laragon\www\p5bk\app\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\laragon\www\p5bk\app\Controllers\Laporan.php(20): App\Models\NilaiP5bk->getAllNilai()
+#6 E:\laragon\www\p5bk\system\CodeIgniter.php(907): App\Controllers\Laporan->index()
+#7 E:\laragon\www\p5bk\system\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 E:\laragon\www\p5bk\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\laragon\www\p5bk\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 E:\laragon\www\p5bk\system\Commands\Server\rewrite.php(43): require_once('E:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2022-10-09 14:46:17 --> Unknown column 'tb_siswa.kelas_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *
+FROM `tb_siswa`
+JOIN `nilai_p5bk` ON `nilai_p5bk`.`siswa_id` = `tb_siswa`.`siswa_id`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`kelas_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_siswa`
+JOIN `nilai_p5bk` ON `nilai_p5bk`.`siswa_id` = `tb_siswa`.`siswa_id`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`kelas_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_siswa`
+JOIN `nilai_p5bk` ON `nilai_p5bk`.`siswa_id` = `tb_siswa`.`siswa_id`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`kelas_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_siswa`
+JOIN `nilai_p5bk` ON `nilai_p5bk`.`siswa_id` = `tb_siswa`.`siswa_id`
+JOIN `tb_kelas` ON `tb_kelas`.`kelas_id` = `tb_siswa`.`kelas_id`', [], false)
+ 5 APPPATH\Models\NilaiP5bk.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(20): App\Models\NilaiP5bk->getAllNilai()
+ 7 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

@@ -31,8 +31,6 @@ class P5bk extends BaseController
 
         $get_kelas = $this->KelasModel->findAll();
 
-
-
         $project = $db->table('rencana_budaya_kerja');
         $project = $project->get()->getResultArray();
 
@@ -99,7 +97,7 @@ class P5bk extends BaseController
     public function capaian()
     {
 
-        $id = $this->request->uri->getSegment(3);
+        $id = $this->request->uri->getSegment(2);
         $db  = $this->db;
         $builder = $db->table('elemen');
         $builder->select('elemen.id_elemen, elemen.nama_elemen, sub_elemen.id, sub_elemen.nama_sub_elemen, sub_elemen.capaian');
@@ -125,14 +123,27 @@ class P5bk extends BaseController
         $project_id = $this->request->getVar('project_id');
         $dimensi_id = $this->request->getVar('dimensi_id');
 
+
+        //if $dimensi_id is null
+        if ($dimensi_id == null) {
+            session()->setFlashdata('error', 'Data gagal ditambahkan');
+            return redirect()->to(url_to('admin-perencanaan'));
+        }
+
+
         $index = 0;
         $data = array();
 
         for ($i = 0; $i < count($project_id); $i++) {
-            for ($j = 0; $j < count($dimensi_id); $j++) {
-                $data[$index]['rencana_id'] = $project_id[$i];
-                $data[$index]['dimensi_id'] = $dimensi_id[$j];
-                $index++;
+            if ($dimensi_id == null) {
+                session()->setFlashdata('error', 'Data gagal ditambahkan');
+                return redirect()->to(url_to('admin-perencanaan'));
+            } else {
+                for ($j = 0; $j < count($dimensi_id); $j++) {
+                    $data[$index]['rencana_id'] = $project_id[$i];
+                    $data[$index]['dimensi_id'] = $dimensi_id[$j];
+                    $index++;
+                }
             }
         }
 

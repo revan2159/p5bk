@@ -15,8 +15,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="float-end">
-                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importdata" type="button"><i class="fas fa-plus"></i> Import Data</button>
-                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
+                            <?php if (in_groups('admin')) : ?>
+                                <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importdata" type="button"><i class="fas fa-plus"></i> Import Data</button>
+                                <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -28,7 +30,9 @@
                             <th>Kelas</th>
                             <th>Program Keahlian</th>
                             <th>Jumlah Siswa</th>
-                            <th>Aksi</th>
+                            <?php if (in_groups('admin')) : ?>
+                                <th>Aksi</th>
+                            <?php endif; ?>
                         </tr>
                     </thead>
 
@@ -39,15 +43,15 @@
                                 <td><?= $s['kelas_nama'] ?></td>
                                 <td><?= $s['kelas_jurusan'] ?></td>
                                 <td><?= $s['jumlah_siswa'] ?></td>
-                                <td>
-                                    <a href="<?= base_url('fitur/siswa/edit/' . $s['kelas_id']) ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</a>
-                                    <a href="<?= base_url('fitur/siswa/delete/' . $s['kelas_id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i> Hapus</a>
-                                </td>
+                                <?php if (in_groups('admin')) : ?>
+                                    <td>
+                                        <a href="<?= base_url('fitur/siswa/edit/' . $s['kelas_id']) ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</a>
+                                        <a href="<?= base_url('fitur/siswa/delete/' . $s['kelas_id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i> Hapus</a>
+                                    </td>
+                                <?php endif; ?>
                             </tr>
                         <?php endforeach; ?>
-
                     </tbody>
-
                 </table>
             </div>
         </div>
@@ -101,7 +105,7 @@
             </div>
         </div>
     </div>
-    <a class="btn btn-primary" data-bs-toggle="modal" href="#verticalCenter" role="button">Open first modal</a>
+
 </div>
 
 <?= $this->endSection(); ?>

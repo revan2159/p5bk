@@ -41,16 +41,13 @@
                                         ';
                                     }
                                     ?>
-
-
-
                                 </td>
                                 <td>
                                     <a href="<?= base_url('nilai/lihat_nilai/' . $nilai['siswa_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-search"></i></a>
                                 </td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="<?= base_url('admin/laporan/cetak/' . $nilai['nilai_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-print"></i> Cetak</a>
+                                        <a href="<?= base_url('laporan/cetak/' . $nilai['siswa_id']) ?>" class="btn btn-primary btn-sm"><i class="fas fa-print"></i> Cetak</a>
                                     </div>
                                 </td>
                             </tr>

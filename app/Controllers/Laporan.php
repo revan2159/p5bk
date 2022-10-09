@@ -8,23 +8,21 @@ use App\Models\OpsiModel;
 use App\Models\CatatanModel;
 use App\Models\DimensiModel;
 use App\Controllers\BaseController;
+use App\Models\SiswaModel;
 
 class Laporan extends BaseController
 {
     public function index()
     {
         $nilai = new NilaiP5bk();
-        $getnilai = $nilai->getAllNilai();
-
+        $getniilai = $nilai->getAllNilai();
         $catatan = new CatatanModel();
         $getcatatan = $catatan->getCatatanbysiswa();
-
-
 
         $data = [
             'title' => 'Laporan',
             'active' => 'laporan',
-            'allnilai' => $getnilai,
+            'allnilai' => $getniilai,
             'allcatatan' => $getcatatan
         ];
         return view('fitur/laporan', $data);
@@ -59,7 +57,7 @@ class Laporan extends BaseController
     public function cetak()
     {
         $db = Database::connect();
-        $id_siswa = $this->request->uri->getSegment(4);
+        $id_siswa = $this->request->uri->getSegment(3);
 
         //get data siswa 
         $siswa = $db->table('tb_siswa');

@@ -17,7 +17,7 @@
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                 <?php
                                 foreach ($dimensi as $d) {
-                                    echo '<li><a class="dropdown-item" href="' . base_url('admin/capaian/' . $d->id_dimensi)  . '">' . $d->nama_dimensi . ' </a></li>';
+                                    echo '<li><a class="dropdown-item" href="' . base_url('capaian/' . $d->id_dimensi)  . '">' . $d->nama_dimensi . ' </a></li>';
                                 }
                                 ?>
                             </ul>

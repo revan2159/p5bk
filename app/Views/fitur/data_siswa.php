@@ -15,8 +15,10 @@
                     </div>
                     <div class="col-md-6">
                         <div class="float-end">
-                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importdata" type="button"><i class="fas fa-plus"></i> Import Data</button>
-                            <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
+                            <?php if (in_groups('admin')) : ?>
+                                <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#importdata" type="button"><i class="fas fa-plus"></i> Import Data</button>
+                                <button class="btn mb-2 btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#verticalCenter" type="button"><i class="fas fa-plus"></i> Tambah Data</button>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -30,7 +32,7 @@
                             <th>Nama</th>
                             <th>Kelas</th>
                             <th>Status</th>
-                            <th>Aksi</th>
+                            <!-- <th>Aksi</th> -->
                         </tr>
                     </thead>
 
@@ -42,12 +44,12 @@
                                 <td><?= $no++ ?></td>
                                 <td><?= $s['siswa_nis'] ?></td>
                                 <td><?= $s['siswa_nama'] ?></td>
-                                <td><?= $s['siswa_kelas'] ?></td>
+                                <td><?= $s['kelas_nama'] ?></td>
                                 <td><?= $s['siswa_status'] ?></td>
-                                <td>
+                                <!-- <td>
                                     <a href="<?= base_url('fitur/siswa/edit/' . $s['siswa_id']) ?>" class="btn btn-warning btn-sm"><i class="fas fa-edit"></i> Edit</a>
                                     <a href="<?= base_url('fitur/siswa/delete/' . $s['siswa_id']) ?>" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')"><i class="fas fa-trash"></i> Hapus</a>
-                                </td>
+                                </td> -->
                             </tr>
                         <?php endforeach; ?>
 
@@ -59,7 +61,7 @@
                             <th>Nama</th>
                             <th>Kelas</th>
                             <th>Status</th>
-                            <th>Aksi</th>
+                            <!-- <th>Aksi</th> -->
                         </tr>
                     </tfoot>
                 </table>
@@ -115,7 +117,8 @@
             </div>
         </div>
     </div>
-    <a class="btn btn-primary" data-bs-toggle="modal" href="#verticalCenter" role="button">Open first modal</a>
+    <!-- <a class="btn btn-primary" data-bs-toggle="modal" href="#verticalCenter" role="button">Open first modal</a> -->
+
 </div>
 
 <?= $this->endSection(); ?>

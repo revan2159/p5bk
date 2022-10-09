@@ -51,11 +51,7 @@
         <ul class="sub-menu">
             <li class="<?php if ($active === 'perencanaan') {
                             echo 'active';
-                        } else echo '' ?>"><a href="<?php if (in_groups('admin')) {
-                                                        echo url_to('admin-perencanaan');
-                                                    } else {
-                                                        echo url_to('guru-perencanaan');
-                                                    } ?>" class="link"><span>Perencanaan</span></a></li>
+                        } else echo '' ?>"><a href="<?= url_to('perencanaan') ?>" class="link"><span>Perencanaan</span></a></li>
             <li class="<?php if ($active === 'penilaian') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('penilaian'); ?>" class="link"><span>Input Nilai</span></a></li>

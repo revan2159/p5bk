@@ -141,7 +141,7 @@
                                     </table>
                                     <input type="hidden" name="count" value="<?= $count_elemen ?>">
                                     <input type="hidden" name="count_siswa" value="<?= $count_siswa ?>">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Simpan</button>
                                 </form>
                             <?php else :  ?>
                                 <div class="alert alert-warning" role="alert">

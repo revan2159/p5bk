@@ -44,45 +44,49 @@ $routes->set404Override();
 //});    // default route
 
 $routes->get('/', 'Home::index');
-$routes->get('/test', 'Test::index');
-$routes->get('/test/(:num)', 'Test::index/$1');
-$routes->get('/test/(:num)/(:num)', 'Test::index/$1');
+// $routes->get('/test', 'Test::index');
+// $routes->get('/test/(:num)', 'Test::index/$1');
+// $routes->get('/test/(:num)/(:num)', 'Test::index/$1');
 
-$routes->get('/rapor', 'Rapor::index');
+// $routes->get('/rapor', 'Rapor::index');
+
+$routes->get('admin/dashboard', 'Admin::index', ['filter' => 'role:admin']);
+$routes->get('guru/dashboard', 'Guru::index', ['filter' => 'role:guru']);
+$routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
+$routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
+$routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah', 'filter' => 'role:admin']);
+$routes->get('data-siswa', 'Siswa::index', ['as' => 'data-siswa']);
+$routes->get('data-kelas', 'Kelas::index', ['as' => 'data-kelas']);
+$routes->get('data-p5bk', 'P5bk::capaian', ['as' => 'data-p5bk']);
+$routes->get('capaian/(:num)', 'P5bk::capaian/$1', ['filter' => 'role:guru,admin']);
+$routes->get('perencanaan', 'P5bk::index', ['as' => 'perencanaan', 'filter' => 'role:guru,admin']);
+$routes->get('perencanaan/(:num)', 'P5bk::hapus_rencana/$1', ['filter' => 'role:guru,admin']);
+$routes->post('tambah-rencana', 'P5bk::tambah_rencana', ['as' => 'tambah-rencana', 'filter' => 'role:guru,admin']);
+$routes->post('tambah-aspek', 'P5bk::simpan_aspek', ['as' => 'simpan-aspek', 'filter' => 'role:guru,admin']);
+// $routes->get('aspek', 'Aspek::index', ['as' => 'set-aspek']);
+$routes->get('penilaian', 'Penilaian::index', ['as' => 'penilaian', 'filter' => 'role:guru,admin']);
+$routes->post('save', 'Penilaian::save', ['as' => 'input-nilai', 'filter' => 'role:guru,admin']);
+$routes->get('laporan', 'Laporan::index', ['as' => 'laporan', 'filter' => 'role:guru,admin']);
+$routes->get('laporan/cetak/(:num)', 'Laporan::cetak/$1', ['filter' => 'role:guru,admin']);
+$routes->post('catatan/update', 'Laporan::update_catatan', ['as' => 'update-catatan', 'filter' => 'role:guru,admin']);
+$routes->post('catatan/tambah', 'Laporan::tambah_catatan', ['as' => 'tambah-catatan', 'filter' => 'role:guru,admin']);
+// });
 
 
 
-$routes->group('admin', ['filter' => 'role:admin'], function ($routes) {
-    $routes->get('dashboard', 'Admin::index');
-    $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
-    $routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
-    $routes->get('data-siswa', 'Siswa::index', ['as' => 'data-siswa']);
-    $routes->get('data-kelas', 'Kelas::index', ['as' => 'data-kelas']);
-    $routes->get('data-p5bk', 'P5bk::capaian', ['as' => 'data-p5bk']);
-    $routes->get('perencanaan', 'P5bk::index', ['as' => 'admin-perencanaan']);
-    $routes->get('perencanaan/(:num)', 'P5bk::hapus_rencana/$1', ['as' => 'hapus-perencanaan']);
-    $routes->get('capaian/(:num)', 'P5bk::capaian/$1');
-    $routes->get('aspek', 'Aspek::index', ['as' => 'set-aspek']);
-    $routes->get('penilaian', 'Penilaian::index', ['as' => 'penilaian']);
-    $routes->post('save', 'Penilaian::save', ['as' => 'input-nilai']);
-    $routes->post('tambah-rencana', 'P5bk::tambah_rencana', ['as' => 'tambah-rencana']);
-    $routes->post('tambah-aspek', 'P5bk::simpan_aspek', ['as' => 'simpan-aspek']);
-    $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah']);
-    $routes->get('laporan', 'Laporan::index', ['as' => 'laporan']);
-    $routes->get('laporan/cetak/(:num)', 'Laporan::cetak/$1');
-    $routes->post('catatan/update', 'Laporan::update_catatan', ['as' => 'update-catatan']);
-    $routes->post('catatan/tambah', 'Laporan::tambah_catatan', ['as' => 'tambah-catatan']);
-});
+
+
+
 
 
 //router for update, delete, and insert data
 
 
-$routes->group('guru', ['filter' => 'role:guru'], function ($routes) {
-    $routes->get('dashboard', 'Guru::index');
-    $routes->get('profil', 'Guru::profil', ['as' => 'guru_profil']);
-    $routes->get('perencanaan', 'P5bk::index', ['as' => 'guru-perencanaan']);
-});
+// $routes->group('guru', ['filter' => 'role:guru'], function ($routes) {
+//     $routes->get('dashboard', 'Guru::index');
+//     $routes->get('profil', 'Guru::profil', ['as' => 'guru_profil']);
+//     $routes->get('perencanaan', 'P5bk::index', ['as' => 'guru-perencanaan']);
+// });
 
 
 
