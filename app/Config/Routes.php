@@ -44,11 +44,6 @@ $routes->set404Override();
 //});    // default route
 
 $routes->get('/', 'Home::index');
-// $routes->get('/test', 'Test::index');
-// $routes->get('/test/(:num)', 'Test::index/$1');
-// $routes->get('/test/(:num)/(:num)', 'Test::index/$1');
-
-// $routes->get('/rapor', 'Rapor::index');
 
 $routes->get('admin/dashboard', 'Admin::index', ['filter' => 'role:admin']);
 $routes->get('guru/dashboard', 'Guru::index', ['filter' => 'role:guru']);
@@ -56,6 +51,7 @@ $routes->get('profil', 'Admin::profil', ['as' => 'admin_profil']);
 $routes->get('data-sekolah', 'Admin::data_sekolah', ['as' => 'data-sekolah']);
 $routes->post('ubah-sekolah', 'DataSekolah::ubah_sekolah', ['as' => 'ubah-sekolah', 'filter' => 'role:admin']);
 $routes->get('data-siswa', 'Siswa::index', ['as' => 'data-siswa']);
+$routes->get('data-guru', 'DataSekolah::data_guru', ['as' => 'data-guru']);
 $routes->get('data-kelas', 'Kelas::index', ['as' => 'data-kelas']);
 $routes->get('data-p5bk', 'P5bk::capaian', ['as' => 'data-p5bk']);
 $routes->get('capaian/(:num)', 'P5bk::capaian/$1', ['filter' => 'role:guru,admin']);

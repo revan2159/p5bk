@@ -58,4 +58,32 @@ class NilaiP5bk extends Model
 
         return $nilai->get()->getResultArray();
     }
+
+    public function getNilai($id_siswa)
+    {
+        //get data nilai dimensi
+        $kueri_nilai = $this->db->table('nilai_p5bk');
+        $kueri_nilai->select('nilai_p5bk.dimensi_id,nilai_p5bk.rencana_id,nilai_p5bk.rencana_id,nilai_p5bk.elemen_id,nilai_p5bk.opsi_id');
+        $kueri_nilai->where('nilai_p5bk.siswa_id', $id_siswa);
+        $nilai = $kueri_nilai->get()->getResultArray();
+        return $nilai;
+    }
+    public function catatan($id_siswa)
+    {
+        //get catatan
+        $catatan = $this->db->table('catatan');
+        $catatan->select('catatan.catatan');
+        $catatan->where('catatan.siswa_id', $id_siswa);
+        return $catatan->get()->getRowArray();
+    }
+
+
+    ///baru mungkin akan dihapus
+
+
+    // public function getNilaiSiswa($id_siswa)
+    // {
+    //     $nilai_siswa = $this->db->table('nilai_p5bk');
+    //     $nilai_siswa->select('nilai_p5bk.siswa_id,nilai_p5bk.rencana_id,nilai_p5bk.dimensi_id,nilai_p5bk.elemen_id,nilai_p5bk.opsi_id,tb_siswa.siswa_nama,tb_siswa.siswa_id');
+    // }
 }

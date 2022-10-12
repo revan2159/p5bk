@@ -53,4 +53,21 @@ class DataSekolah extends BaseController
             return redirect()->to(url_to('data-sekolah'));
         }
     }
+
+    public function data_guru()
+    {
+
+        $filejson = file_get_contents('assets/guru_202210080740.json');
+        $guru = json_decode($filejson, true);
+        $guru = $guru['guru'];
+        // $guru = $guru[0];
+        // dd($guru);
+
+        $data = [
+            'title' => 'Data Guru',
+            'active' => 'data-guru',
+            'guru' => $guru
+        ];
+        return view('fitur/data-guru', $data);
+    }
 }

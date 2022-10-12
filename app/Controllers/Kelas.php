@@ -13,7 +13,8 @@ class Kelas extends BaseController
         $sum_siswa = $kelas->select('tb_kelas.kelas_id, tb_kelas.kelas_nama, tb_kelas.kelas_jurusan,COUNT(tb_siswa.siswa_id) as jumlah_siswa')
             ->join('tb_siswa', 'tb_siswa.siswa_kelas = tb_kelas.kelas_id', 'left')
             ->groupBy('tb_kelas.kelas_id')
-            ->findAll();
+            ->get()->getResultArray();
+
 
 
         $data = [

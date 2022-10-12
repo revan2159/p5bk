@@ -1,0 +1,244 @@
+CRITICAL - 2022-10-12 20:03:18 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('guru/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:04:03 --> You do not have sufficient permissions to access that page.
+in VENDORPATH\myth\auth\src\Filters\RoleFilter.php on line 45.
+ 1 SYSTEMPATH\Filters\Filters.php(173): Myth\Auth\Filters\RoleFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), [...])
+ 2 SYSTEMPATH\CodeIgniter.php(431): CodeIgniter\Filters\Filters->run('guru/dashboard', 'before')
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:06:28 --> Invalid file: cetak/index.php
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('cetak/index.php')
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('cetak/index', [], true)
+ 3 APPPATH\Controllers\Cetak.php(11): view('cetak/index')
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:16:17 --> Undefined property: CodeIgniter\View\View::$jabatan_model
+in APPPATH\Views\fitur\cetak2.php on line 34.
+ 1 APPPATH\Views\fitur\cetak2.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: CodeIgniter\\View\\View::$jabatan_model', 'APPPATH\\Views\\fitur\\cetak2.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 5 APPPATH\Controllers\Cetak.php(17): view('fitur/cetak2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:40:29 --> Undefined array key "rencana_id"
+in APPPATH\Controllers\Cetak.php on line 24.
+ 1 APPPATH\Controllers\Cetak.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rencana_id"', 'APPPATH\\Controllers\\Cetak.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:47:49 --> Undefined constant "App\Controllers\Siswa"
+in APPPATH\Controllers\Cetak.php on line 19.
+ 1 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 2 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:55:52 --> Undefined array key "kelas_nama "
+in APPPATH\Controllers\Cetak.php on line 58.
+ 1 APPPATH\Controllers\Cetak.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_nama "', 'APPPATH\\Controllers\\Cetak.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 20:57:44 --> Undefined array key 0
+in APPPATH\Controllers\Cetak.php on line 58.
+ 1 APPPATH\Controllers\Cetak.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'APPPATH\\Controllers\\Cetak.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:02:19 --> Undefined variable $siswa
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [...], true)
+ 5 APPPATH\Controllers\Cetak.php(34): view('fitur/cetak2', [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:03:00 --> Undefined variable $siswa
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [...], true)
+ 5 APPPATH\Controllers\Cetak.php(34): view('fitur/cetak2', [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:03:12 --> Undefined variable $siswa
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [...], true)
+ 5 APPPATH\Controllers\Cetak.php(34): view('fitur/cetak2', [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:04:12 --> Undefined variable $siswa
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [...], true)
+ 5 APPPATH\Controllers\Cetak.php(34): view('fitur/cetak2', [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:05:05 --> Undefined variable $siswa
+in APPPATH\Views\fitur\cetak2.php on line 3.
+ 1 APPPATH\Views\fitur\cetak2.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'APPPATH\\Views\\fitur\\cetak2.php', 3)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [...], true)
+ 5 APPPATH\Controllers\Cetak.php(34): view('fitur/cetak2', [], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:13:17 --> Undefined variable $data
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 5 APPPATH\Controllers\Cetak.php(35): view('fitur/cetak2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:16:31 --> Undefined array key "siswa_kelas"
+in APPPATH\Views\fitur\cetak2.php on line 23.
+ 1 APPPATH\Views\fitur\cetak2.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_kelas"', 'APPPATH\\Views\\fitur\\cetak2.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 5 APPPATH\Controllers\Cetak.php(35): view('fitur/cetak2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:16:32 --> Undefined array key "siswa_kelas"
+in APPPATH\Views\fitur\cetak2.php on line 23.
+ 1 APPPATH\Views\fitur\cetak2.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_kelas"', 'APPPATH\\Views\\fitur\\cetak2.php', 23)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 5 APPPATH\Controllers\Cetak.php(35): view('fitur/cetak2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:19:25 --> Undefined array key "siswa_kelas"
+in APPPATH\Views\fitur\cetak2.php on line 25.
+ 1 APPPATH\Views\fitur\cetak2.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "siswa_kelas"', 'APPPATH\\Views\\fitur\\cetak2.php', 25)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\fitur\\cetak2.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 5 APPPATH\Controllers\Cetak.php(35): view('fitur/cetak2', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 7 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:27:07 --> syntax error, unexpected token ";"
+in APPPATH\Views\fitur\cetak2.php on line 8.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1142): CodeIgniter\View\View->render('fitur/cetak2', [], true)
+ 3 APPPATH\Controllers\Cetak.php(35): view('fitur/cetak2', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 5 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:38:32 --> fwrite(): Write of 76 bytes failed with errno=22 Invalid argument
+in SYSTEMPATH\CLI\CLI.php on line 1013.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write of 76 bytes failed with errno=22 Invalid argument', 'SYSTEMPATH\\CLI\\CLI.php', 1013)
+ 2 SYSTEMPATH\CLI\CLI.php(1013): fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8081[0m
+')
+ 3 SYSTEMPATH\CLI\CLI.php(364): CodeIgniter\CLI\CLI::fwrite(resource (stream), '[0;32mCodeIgniter development server started on http://localhost:8081[0m
+')
+ 4 SYSTEMPATH\Commands\Server\Serve.php(97): CodeIgniter\CLI\CLI::write('[0;32mCodeIgniter development server started on http://localhost:8081[0m', 'green')
+ 5 SYSTEMPATH\Commands\Server\Serve.php(114): CodeIgniter\Commands\Server\Serve->run([])
+ 6 SYSTEMPATH\CLI\Commands.php(63): CodeIgniter\Commands\Server\Serve->run([])
+ 7 SYSTEMPATH\CLI\CommandRunner.php(65): CodeIgniter\CLI\Commands->run('serve', [])
+ 8 SYSTEMPATH\CLI\CommandRunner.php(51): CodeIgniter\CLI\CommandRunner->index([])
+ 9 SYSTEMPATH\CodeIgniter.php(900): CodeIgniter\CLI\CommandRunner->_remap('index', [...])
+10 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(CodeIgniter\CLI\CommandRunner))
+11 SYSTEMPATH\CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\CLI\Console.php(48): CodeIgniter\CodeIgniter->run()
+13 ROOTPATH\spark(98): CodeIgniter\CLI\Console->run()
+CRITICAL - 2022-10-12 21:38:32 --> Uncaught ErrorException: fwrite(): Write of 2 bytes failed with errno=22 Invalid argument in E:\laragon\www\p5bk\system\CLI\CLI.php:1013
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(8, 'fwrite(): Write...', 'E:\\laragon\\www\\...', 1013)
+#1 E:\laragon\www\p5bk\system\CLI\CLI.php(1013): fwrite(Resource id #2, '\r\n')
+#2 E:\laragon\www\p5bk\system\CLI\CLI.php(364): CodeIgniter\CLI\CLI::fwrite(Resource id #2, '\r\n')
+#3 E:\laragon\www\p5bk\system\CLI\CLI.php(441): CodeIgniter\CLI\CLI::write()
+#4 E:\laragon\www\p5bk\app\Views\errors\cli\error_exception.php(6): CodeIgniter\CLI\CLI::newLine()
+#5 E:\laragon\www\p5bk\system\Debug\Exceptions.php(251): include('E:\\laragon\\www\\...')
+#6 E:\laragon\www\p5bk\system\Debug\Exceptions.php(254): CodeIgniter\Debug\Exceptions->CodeIgniter\Debug\{closure}()
+#7 E:\laragon\www\p5bk\system\Debug\Exceptions.php(138): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#8 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#9 {main}
+  thrown
+in SYSTEMPATH\CLI\CLI.php on line 1013.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2022-10-12 21:50:04 --> file_get_contents(assets/css/bootstrap.min.css): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Cetak.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(assets/css/bootstrap.min.css): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Cetak.php', 34)
+ 2 APPPATH\Controllers\Cetak.php(34): file_get_contents('assets/css/bootstrap.min.css', 'FCPATH\\assets\\css\\cetak.css')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:51:58 --> file_get_contents(/vendor/bootstrap/dist/css/bootstrap.min.css): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Cetak.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/vendor/bootstrap/dist/css/bootstrap.min.css): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Cetak.php', 34)
+ 2 APPPATH\Controllers\Cetak.php(34): file_get_contents('/vendor/bootstrap/dist/css/bootstrap.min.css', 'FCPATH\\assets\\css\\cetak.css')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')
+CRITICAL - 2022-10-12 21:52:33 --> file_get_contents(/vendor/bootstrap/dist/css/bootstrap.min.css): Failed to open stream: No such file or directory
+in APPPATH\Controllers\Cetak.php on line 34.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(/vendor/bootstrap/dist/css/bootstrap.min.css): Failed to open stream: No such file or directory', 'APPPATH\\Controllers\\Cetak.php', 34)
+ 2 APPPATH\Controllers\Cetak.php(34): file_get_contents('/vendor/bootstrap/dist/css/bootstrap.min.css')
+ 3 SYSTEMPATH\CodeIgniter.php(907): App\Controllers\Cetak->index()
+ 4 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Cetak))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(43): require_once('FCPATH\\index.php')

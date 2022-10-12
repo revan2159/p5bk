@@ -75,7 +75,7 @@ class P5bk extends BaseController
         $isert = $this->db->table('rencana_budaya_kerja')->insertBatch($filter);
         if ($isert) {
             session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         } else {
             session()->setFlashdata('error', 'Data gagal ditambahkan');
             return redirect()->to('/p5bk');
@@ -87,10 +87,10 @@ class P5bk extends BaseController
         $hapus = $this->db->table('rencana_budaya_kerja')->delete(['rencana_id' => $id]);
         if ($hapus) {
             session()->setFlashdata('pesan', 'Data berhasil dihapus');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         } else {
             session()->setFlashdata('error', 'Data gagal dihapus');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         }
     }
 
@@ -127,7 +127,7 @@ class P5bk extends BaseController
         //if $dimensi_id is null
         if ($dimensi_id == null) {
             session()->setFlashdata('error', 'Data gagal ditambahkan');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         }
 
 
@@ -137,7 +137,7 @@ class P5bk extends BaseController
         for ($i = 0; $i < count($project_id); $i++) {
             if ($dimensi_id == null) {
                 session()->setFlashdata('error', 'Data gagal ditambahkan');
-                return redirect()->to(url_to('admin-perencanaan'));
+                return redirect()->to(url_to('perencanaan'));
             } else {
                 for ($j = 0; $j < count($dimensi_id); $j++) {
                     $data[$index]['rencana_id'] = $project_id[$i];
@@ -152,10 +152,10 @@ class P5bk extends BaseController
         $builder->insertBatch($data);
         if ($builder) {
             session()->setFlashdata('pesan', 'Data berhasil ditambahkan');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         } else {
             session()->setFlashdata('error', 'Data gagal ditambahkan');
-            return redirect()->to(url_to('admin-perencanaan'));
+            return redirect()->to(url_to('perencanaan'));
         }
     }
 }

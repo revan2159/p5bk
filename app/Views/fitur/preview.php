@@ -236,7 +236,8 @@
                                                                 foreach ($nilai as $n) :
                                                                     if ($n['elemen_id'] == $e['id_elemen'] && $n['opsi_id'] == $p['opsi_id']) :
                                                                         //&#10004;
-                                                                        echo '&#10003;';
+                                                                        //
+                                                                        echo '✓';
                                                                     endif;
                                                                 endforeach;
                                                                 ?>

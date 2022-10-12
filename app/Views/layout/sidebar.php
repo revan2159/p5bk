@@ -26,9 +26,11 @@
                 <li class="<?php if ($active === 'data_sekolah') {
                                 echo 'active';
                             } else echo '' ?>"><a href="<?= url_to('data-sekolah') ?>" class="link"><span>Data Sekolah</span></a></li>
-                <!-- <li><a href="element-button.html" class="link"><span>Data Guru</span></a></li> -->
                 <!-- <li><a href="element-tabs-collapse.html" class="link"><span>Data Akademik</span></a></li> -->
             <?php endif; ?>
+            <li class="<?php if ($active === 'data-guru') {
+                            echo 'active';
+                        } else echo '' ?>"><a href="<?= url_to('data-guru') ?>" class="link"><span>Data Guru</span></a></li>
             <li class="<?php if ($active === 'data_siswa') {
                             echo 'active';
                         } else echo '' ?>"><a href="<?= url_to('data-siswa') ?>" class="link"><span>Data Siswa</span></a></li>

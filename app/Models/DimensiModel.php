@@ -48,6 +48,14 @@ class DimensiModel extends Model
         return $kueri->getResult();
     }
 
+    public function getElemen()
+    {
+        //get name dimensi
+        $elm = $this->db->table('elemen');
+        $elm->select('elemen.id_elemen,elemen.dimensi_id, elemen.nama_elemen, elemen.elemen_deskripsi');
+        $elm = $elm->get()->getResultArray();
+        return $elm;
+    }
 
 
     //find elemen and sub elemen by dimensi id

@@ -42,6 +42,9 @@ class AspekModel extends Model
 
     public function getAllaspek()
     {
-        return $this->findAll();
+        //get aspek
+        $aspek = $this->db->table('aspek_penilaian');
+        $aspek = $aspek->get()->getResultArray();
+        return $aspek;
     }
 }

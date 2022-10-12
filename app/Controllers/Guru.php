@@ -21,4 +21,6 @@ class Guru extends BaseController
     {
         return view('guru/profil');
     }
+
+    
 }

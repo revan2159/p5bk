@@ -49,4 +49,15 @@ class ProjectModel extends Model
     {
         return $this->findAll();
     }
+
+    public function getProjecbykelas($kelas_id)
+    {
+        //get data rencana
+        $rencana = $this->db->table('rencana_budaya_kerja');
+        $rencana = $rencana->select('rencana_budaya_kerja.rencana_id,rencana_budaya_kerja.nama, rencana_budaya_kerja.deskripsi');
+        $rencana = $rencana->where('rencana_budaya_kerja.kelas_id', $kelas_id);
+        $rencana = $rencana->get()->getResultArray();
+
+        return $rencana;
+    }
 }
